@@ -1,0 +1,16 @@
+[project]
+name = "bagobo-translator-backend"
+version = "0.1.0"
+description = "FastAPI backend for Bagobo-Tagabawa document translator"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[standard]>=0.128.1",
+    "pymupdf>=1.24.8",
+    "python-docx>=0.8.11",
+    "pillow>=10.0.0",
+    "numpy>=1.24.0",
+    "uuid>=1.30",
+    "python-multipart>=0.0.6",
+    "pydantic>=2.0.0",
+    "aiofiles>=23.0.0",
+]

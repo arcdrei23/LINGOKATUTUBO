@@ -1,0 +1,344 @@
+﻿"""
+Translation pipeline coordinator
+Orchestrates the entire translation workflow
+"""
+
+import asyncio
+import os
+from typing import Optional, Dict, Any
+from datetime import datetime
+import json
+
+from models import FileType, DetectionType
+from file_service import get_file_service
+from detection_service import get_detection_service
+from extraction_service import get_extraction_service
+from reconstruction_service import get_reconstruction_service
+from translation_dataset import get_translation_dataset
+from language_detection_service import get_language_detection_service
+
+
+class JobStatus:
+    """Tracks the status of a translation job"""
+    
+    def __init__(self, job_id: str):
+        self.job_id = job_id
+        self.status = "queued"  # queued, processing, completed, failed
+        self.progress = 0
+        self.error = None
+        self.detection_type = None
+        self.file_type = None
+        self.created_at = datetime.now()
+        self.completed_at = None
+        self.metadata = {}
+
+
+class PipelineService:
+    """Orchestrates the document translation pipeline"""
+    
+    def __init__(self):
+        self.file_service = get_file_service()
+        self.detection_service = get_detection_service()
+        self.extraction_service = get_extraction_service()
+        self.reconstruction_service = get_reconstruction_service()
+        self.translation_dataset = get_translation_dataset()
+        self.language_service = get_language_detection_service(self.translation_dataset)
+
+        self.jobs = {}  # job_id -> JobStatus
+    
+    async def process_translation(
+        self,
+        job_id: str,
+        input_file_path: str,
+        file_type: FileType,
+        source_language: str = "auto",
+        target_language: str = "tagabawa"
+    ) -> bool:
+        """
+        Main translation pipeline
+        
+        Args:
+            job_id: Unique job identifier
+            input_file_path: Path to uploaded file
+            file_type: Type of file (PDF, DOCX, JPG, PNG)
+            source_language: Source language
+            target_language: Target language
+        
+        Returns:
+            True if successful
+        """
+        job = JobStatus(job_id)
+        job.file_type = file_type
+        self.jobs[job_id] = job
+        
+        try:
+            job.status = "processing"
+
+            print(f"[Pipeline] Job {job_id} started")
+
+            # Phase 1: Detect file type (digital vs scanned)
+            print(f"[Pipeline] Phase 1: Detecting file type for {job_id}")
+            job.progress = 10
+            
+            if file_type == FileType.PDF:
+                job.detection_type = self.detection_service.detect_pdf_type(input_file_path)
+            elif file_type == FileType.DOCX:
+                job.detection_type = self.detection_service.detect_docx_type(input_file_path)
+            else:  # JPG, PNG
+                job.detection_type = self.detection_service.detect_image_type(input_file_path)
+            
+            print(f"[Pipeline] Detected: {job.detection_type}")
+            
+            # Phase 2: Extract text and layout
+            print(f"[Pipeline] Phase 2: Extracting text and layout")
+            job.progress = 25
+            
+            layout_data = []
+            
+            if job.detection_type == DetectionType.DIGITAL:
+                if file_type == FileType.PDF:
+                    layout_data = self.extraction_service.extract_pdf_text_and_layout(input_file_path)
+                elif file_type == FileType.DOCX:
+                    layout_data = self.extraction_service.extract_docx_text_and_layout(input_file_path)
+            else:
+                # For scanned documents, OCR would be called here
+                # Placeholder: create mock layout data
+                print(f"[Pipeline] SCANNED document - OCR placeholder")
+                layout_data = self._create_mock_layout_for_scanned(input_file_path)
+            
+            if not layout_data:
+                raise Exception("Failed to extract layout")
+            
+            job.metadata["layout_blocks"] = len(layout_data)
+
+            # Phase 2.5: Auto-detect source language if requested
+            if source_language == "auto":
+                print(f"[Pipeline] Phase 2.5: Auto-detecting source language")
+                text_samples = [
+                    line.get("text", "")
+                    for page in layout_data[:3]
+                    for block in page.get("blocks", [])
+                    if block.get("type") == "text"
+                    for line in block.get("lines", [])
+                    if line.get("text", "").strip()
+                ]
+                lang_result = self.language_service.detect_document_language(text_samples)
+                detected = lang_result["primary_language"]
+                confidence = lang_result["confidence"]
+                print(f"[Pipeline] Detected: {detected} (confidence: {confidence:.2f})")
+                job.metadata["detected_language"] = detected
+                job.metadata["detection_confidence"] = round(confidence, 3)
+                job.metadata["is_mixed_language"] = lang_result.get("is_mixed", False)
+                job.metadata["language_distribution"] = lang_result.get("language_distribution", {})
+                source_language = detected
+                print(f"[Pipeline] Language detected: {detected} (confidence: {confidence:.2f})")
+            else:
+                job.metadata["detected_language"] = source_language
+                job.metadata["detection_confidence"] = 1.0
+                print(f"[Pipeline] Language set manually: {source_language}")
+
+            # Phase 3: Translate text
+            print(f"[Pipeline] Phase 3: Translating text ({source_language} -> {target_language})")
+            job.progress = 50
+
+            translations = self._translate_layout(layout_data, source_language, target_language)
+
+            # Debug: log first 10 translation pairs to backend console
+            _sample = list(translations.items())[:10]
+            for _orig, _xlat in _sample:
+                print(f'[Pipeline] Translated: "{_orig}" -> "{_xlat}"')
+
+            job.metadata["translated_blocks"] = len(translations)
+            
+            # Phase 4: Reconstruct document
+            print(f"[Pipeline] Phase 4: Reconstructing document")
+            job.progress = 75
+            
+            output_pdf_path = self.file_service.get_output_path(job_id, "translated.pdf")
+            
+            if file_type == FileType.PDF:
+                success = self.reconstruction_service.reconstruct_pdf(
+                    input_file_path,
+                    layout_data,
+                    translations,
+                    output_pdf_path
+                )
+            else:
+                # For DOCX/images, create a simple PDF output
+                success = self._create_output_pdf(
+                    layout_data,
+                    translations,
+                    output_pdf_path
+                )
+            
+            if not success:
+                raise Exception("Failed to reconstruct PDF")
+
+            if not os.path.exists(output_pdf_path):
+                raise Exception(f"Output PDF was not created at: {output_pdf_path}")
+
+            print(f"[Pipeline] Output PDF created: {output_pdf_path} ({os.path.getsize(output_pdf_path)} bytes)")
+
+            # Phase 5: Create bilingual preview
+            print(f"[Pipeline] Phase 5: Creating preview")
+            job.progress = 85
+            
+            preview_dir = os.path.join(self.file_service.get_job_dir(job_id), "preview")
+            original_previews = self.reconstruction_service.create_preview_images(
+                input_file_path, preview_dir, max_pages=2
+            )
+            translated_previews = self.reconstruction_service.create_preview_images(
+                output_pdf_path, preview_dir, max_pages=2
+            )
+            
+            job.metadata["preview_original"] = original_previews
+            job.metadata["preview_translated"] = translated_previews
+            
+            # Phase 6: Create bilingual PDF
+            print(f"[Pipeline] Phase 6: Creating bilingual PDF")
+            job.progress = 95
+            
+            bilingual_path = self.file_service.get_output_path(job_id, "bilingual.pdf")
+            if file_type == FileType.PDF:
+                self.reconstruction_service.create_bilingual_pdf(
+                    input_file_path,
+                    output_pdf_path,
+                    bilingual_path
+                )
+                job.metadata["bilingual_pdf"] = bilingual_path
+            
+            job.status = "completed"
+            job.progress = 100
+            job.completed_at = datetime.now()
+            
+            print(f"[Pipeline] Job {job_id} completed successfully")
+            return True
+        
+        except Exception as e:
+            job.status = "failed"
+            job.error = str(e)
+            print(f"[Pipeline] Job {job_id} failed: {e}")
+            return False
+    
+    def _translate_layout(
+        self,
+        layout_data: list,
+        source_lang: str,
+        target_lang: str
+    ) -> Dict[str, str]:
+        """
+        Translate all text in layout data
+        
+        Returns:
+            Dict mapping original text -> translated text
+        """
+        translations = {}
+        
+        for page_data in layout_data:
+            blocks = page_data.get("blocks", [])
+            
+            for block in blocks:
+                if block.get("type") != "text":
+                    continue
+                
+                lines = block.get("lines", [])
+                
+                for line in lines:
+                    original = line.get("text", "").strip()
+                    if not original:
+                        continue
+                    
+                    # Translate using dataset
+                    translated = self.translation_dataset.translate_phrase(
+                        original,
+                        source_lang=source_lang,
+                        target_lang=target_lang
+                    )
+                    
+                    translations[original] = translated
+        
+        return translations
+    
+    def _create_mock_layout_for_scanned(self, file_path: str) -> list:
+        """
+        Create mock layout for scanned documents
+        Placeholder until OCR is implemented
+        """
+        return [{
+            "page": 0,
+            "width": 612,
+            "height": 792,
+            "blocks": [{
+                "type": "text",
+                "bbox": [50, 50, 562, 742],
+                "lines": [{
+                    "text": "[Scanned document - OCR not yet implemented]",
+                    "bbox": [50, 50, 562, 100]
+                }]
+            }]
+        }]
+    
+    def _create_output_pdf(
+        self,
+        layout_data: list,
+        translations: Dict[str, str],
+        output_path: str
+    ) -> bool:
+        """
+        Create a simple PDF from layout data with translated text
+        """
+        try:
+            import fitz
+            doc = fitz.open()
+            page = doc.new_page()
+            
+            y_pos = 50
+            for page_data in layout_data:
+                blocks = page_data.get("blocks", [])
+                
+                for block in blocks:
+                    if block.get("type") != "text":
+                        continue
+                    
+                    lines = block.get("lines", [])
+                    
+                    for line in lines:
+                        original = line.get("text", "")
+                        translated = translations.get(original, original)
+                        
+                        if translated:
+                            page.insert_text((50, y_pos), translated, fontsize=11)
+                            y_pos += 20
+            
+            os.makedirs(os.path.dirname(output_path), exist_ok=True)
+            doc.save(output_path)
+            doc.close()
+            return True
+        
+        except Exception as e:
+            print(f"[Pipeline] Error creating output PDF: {e}")
+            return False
+    
+    def get_job_status(self, job_id: str) -> Optional[JobStatus]:
+        """Get status of a job"""
+        return self.jobs.get(job_id)
+    
+    def get_job_output(self, job_id: str) -> Optional[str]:
+        """Get output PDF path for a job"""
+        job = self.jobs.get(job_id)
+        if job and job.status == "completed":
+            return self.file_service.get_output_path(job_id, "translated.pdf")
+        return None
+
+
+# Global instance
+_pipeline_service = None
+
+
+def get_pipeline_service() -> PipelineService:
+    """Get or create the global pipeline service"""
+    global _pipeline_service
+    if _pipeline_service is None:
+        _pipeline_service = PipelineService()
+    return _pipeline_service
+

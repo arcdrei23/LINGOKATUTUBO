@@ -1,0 +1,248 @@
+﻿{
+  "source": "phrasebook_only",
+  "dataset_type": "clean_multilingual_phrase_dataset",
+  "languages": [
+    "tagabawa",
+    "cebuano",
+    "filipino",
+    "english"
+  ],
+  "preserve_diacritics": true,
+  "split_sg_pl": true,
+  "split_free_variants": true,
+  "use_main_translation_only_for_lookup": true,
+  "total_sections": 36,
+  "total_source_rows": 735,
+  "total_cleaned_rows": 828,
+  "total_split_rows": 183,
+  "total_sgpl_splits": 2,
+  "total_free_variant_splits": 181,
+  "rows_with_english_alt": 63,
+  "manual_review_count": 92,
+  "columns": [
+    "row_id",
+    "source_row_id",
+    "source_page",
+    "section_id",
+    "section_name",
+    "variant_type",
+    "number_tag",
+    "tagabawa_source",
+    "tagabawa_processing",
+    "cebuano_source",
+    "cebuano_processing",
+    "filipino_source",
+    "filipino_processing",
+    "english_source",
+    "english_processing",
+    "english_alt",
+    "notes",
+    "manual_review"
+  ],
+  "cleaning_rules_applied": [
+    "Whitespace trimmed (leading/trailing)",
+    "Double spaces collapsed to single",
+    "Diacritics preserved exactly (á é ó à ì ô ù ê)",
+    "Processing form = lowercase + trim ONLY, no diacritic removal",
+    "Slash-separated Tagabawa variants split into separate rows",
+    "SG/PL forms split using ka(sg)/kó(pl) detection from orthography",
+    "English slash glosses resolved: main in english_source, rest in english_alt",
+    "kapi NOT normalized to kape — Tagabawa vowel distinction preserved",
+    "Numbering and punctuation preserved exactly",
+    "Original capitalization preserved in source fields"
+  ],
+  "section_index": [
+    {
+      "id": "S01",
+      "name": "Ágpanumbalé / Pagdalaw / Visiting",
+      "page": 2
+    },
+    {
+      "id": "S02",
+      "name": "Tut dalan / Sa daan / On the road",
+      "page": 6
+    },
+    {
+      "id": "S03",
+      "name": "Tut baryu / Sa nayon / In the village",
+      "page": 8
+    },
+    {
+      "id": "S04",
+      "name": "Ágpatóngkóé tun dalám ka balé / Conversation inside the house",
+      "page": 10
+    },
+    {
+      "id": "S05",
+      "name": "Tô makagi ka duwán mantu ágpakitaé / What to say when newly introduced",
+      "page": 14
+    },
+    {
+      "id": "S06",
+      "name": "Tô pamilya / The family",
+      "page": 16
+    },
+    {
+      "id": "S07",
+      "name": "Kadumaan asta duwán kadaddanan / Relations",
+      "page": 18
+    },
+    {
+      "id": "S08",
+      "name": "Ágkémun / Behavior",
+      "page": 22
+    },
+    {
+      "id": "S09",
+      "name": "Ágriyun ka pusung / Emotions",
+      "page": 26
+    },
+    {
+      "id": "S10",
+      "name": "Ágriyun ka panámdám / Thinking",
+      "page": 28
+    },
+    {
+      "id": "S11",
+      "name": "Ágriyun / Feelings",
+      "page": 30
+    },
+    {
+      "id": "S12",
+      "name": "Mga bógók / Sicknesses",
+      "page": 34
+    },
+    {
+      "id": "S13",
+      "name": "Tô lawa ka manubù / The body",
+      "page": 38
+    },
+    {
+      "id": "S14",
+      "name": "Gistudyu katô kinagiyan / Language study",
+      "page": 44
+    },
+    {
+      "id": "S15",
+      "name": "Kasulat / Kabaták / Writing",
+      "page": 48
+    },
+    {
+      "id": "S16",
+      "name": "Góméng asta ágkan / Cooking and eating",
+      "page": 50
+    },
+    {
+      "id": "S17",
+      "name": "Mga nanam / Tastes",
+      "page": 54
+    },
+    {
+      "id": "S18",
+      "name": "Mga gulay asta ágkakan / Vegetables and food",
+      "page": 56
+    },
+    {
+      "id": "S19",
+      "name": "Mga prutas / Fruits",
+      "page": 60
+    },
+    {
+      "id": "S20",
+      "name": "Karni / Meat",
+      "page": 62
+    },
+    {
+      "id": "S21",
+      "name": "Ginámmán / Beverages",
+      "page": 64
+    },
+    {
+      "id": "S22",
+      "name": "Mga ngadág / Smells",
+      "page": 64
+    },
+    {
+      "id": "S23",
+      "name": "Ágbálli asta ághangyù / Buying and bargaining",
+      "page": 66
+    },
+    {
+      "id": "S24",
+      "name": "Ágkarga asta ágsaké / Cargo and riding",
+      "page": 68
+    },
+    {
+      "id": "S25",
+      "name": "Ni timpu ta / The weather",
+      "page": 72
+    },
+    {
+      "id": "S26",
+      "name": "Mga insà / Questions",
+      "page": 74
+    },
+    {
+      "id": "S27",
+      "name": "Tut iskwilaan / At school",
+      "page": 76
+    },
+    {
+      "id": "S28",
+      "name": "Uras / Time",
+      "page": 80
+    },
+    {
+      "id": "S29",
+      "name": "Álló asta dukilám / Day and night",
+      "page": 80
+    },
+    {
+      "id": "S30",
+      "name": "Timpu / Time periods",
+      "page": 84
+    },
+    {
+      "id": "S31",
+      "name": "Salapì / Money and days",
+      "page": 86
+    },
+    {
+      "id": "S32",
+      "name": "Giyap / Counting",
+      "page": 88
+    },
+    {
+      "id": "S33",
+      "name": "Mannanap / Animals",
+      "page": 92
+    },
+    {
+      "id": "S34",
+      "name": "Manuk tut kayun / Birds",
+      "page": 96
+    },
+    {
+      "id": "S35",
+      "name": "Mga ulád / Insects",
+      "page": 98
+    },
+    {
+      "id": "S36",
+      "name": "Sáddà / Fish",
+      "page": 102
+    }
+  ],
+  "split_log_summary": {
+    "sgpl_splits": "Rows with ka(sg)/kó(pl) pattern split into separate rows. 2 rows created per source.",
+    "free_variants": "Rows with ' / ' in Tagabawa that represent alternate expressions, not sg/pl. Each variant becomes its own row linked by source_row_id.",
+    "english_alt_resolution": "63 rows had slash-separated English glosses. First gloss kept in english_source, rest moved to english_alt."
+  },
+  "manual_review_summary": {
+    "total": 92,
+    "reasons": [
+      "variant_check — second/third variant of a free_variant split needs human confirmation that the other-language glosses apply equally",
+      "Rows where the phrasebook alignment may be imprecise due to column extraction"
+    ]
+  }
+}

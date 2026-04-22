@@ -1,0 +1,22 @@
+# Python
+lingokatutubo/backend/.venv/
+lingokatutubo/backend/__pycache__/
+lingokatutubo/backend/**/__pycache__/
+
+# Node / Next.js
+lingokatutubo/frontend/node_modules/
+lingokatutubo/frontend/.next/
+lingokatutubo/frontend/out/
+
+# Environment files
+lingokatutubo/frontend/.env.local
+lingokatutubo/backend/.env
+
+# Generated files
+lingokatutubo/backend/jobs/
+lingokatutubo/backend/uploads/
+lingokatutubo/backend/outputs/
+
+# Logs
+*.log
+npm-debug.log*
