@@ -39,19 +39,19 @@
                             │ Async Job Processing
                             ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                       PIPELINE SERVICE                                   │
+│                       PIPELINE SERVICE                                  │
 ├─────────────────────────────────────────────────────────────────────────┤
-│                                                                           │
+│                                                                         │
 │  Main Orchestrator: process_translation()                               │
-│                                                                           │
+│                                                                         │
 │  ┌─────────────────────────────────────────────────────────────┐        │
 │  │  Phase 1: Detection (10%)                                   │        │
 │  │  ┌────────────────────────────────────────────────┐         │        │
 │  │  │ Detection Service                              │         │        │
-│  │  │ • detect_pdf_type() ─→ DIGITAL or SCANNED     │         │        │
+│  │  │ • detect_pdf_type() ─→ DIGITAL or SCANNED      │         │        │
 │  │  └────────────────────────────────────────────────┘         │        │
 │  └─────────────────────────────────────────────────────────────┘        │
-│                                                                           │
+│                                                                         │
 │  ┌─────────────────────────────────────────────────────────────┐        │
 │  │  Phase 2: Extraction (25%)                                  │        │
 │  │  ┌────────────────────────────────────────────────┐         │        │
@@ -60,18 +60,18 @@
 │  │  │   Returns:                                     │         │        │
 │  │  │   - Text blocks with coordinates               │         │        │
 │  │  │   - Non-text objects (images, lines, shapes)   │         │        │
-│  │  │   - Font info, colors, alignment              │         │        │
+│  │  │   - Font info, colors, alignment               │         │        │
 │  │  └────────────────────────────────────────────────┘         │        │
 │  │                         OR                                  │        │
 │  │  ┌────────────────────────────────────────────────┐         │        │
 │  │  │ OCR Service (SCANNED)                          │         │        │
 │  │  │ • process_scanned_pdf()                        │         │        │
 │  │  │   - Convert pages to images                    │         │        │
-│  │  │   - Run Tesseract OCR                         │         │        │
+│  │  │   - Run Tesseract OCR                          │         │        │
 │  │  │   - Extract text with bounding boxes           │         │        │
 │  │  └────────────────────────────────────────────────┘         │        │
 │  └─────────────────────────────────────────────────────────────┘        │
-│                                                                           │
+│                                                                         │
 │  ┌─────────────────────────────────────────────────────────────┐        │
 │  │  Phase 3: Language Detection (40%)                          │        │
 │  │  ┌────────────────────────────────────────────────┐         │        │
@@ -82,26 +82,26 @@
 │  │  │   - Handle mixed language                      │         │        │
 │  │  └────────────────────────────────────────────────┘         │        │
 │  └─────────────────────────────────────────────────────────────┘        │
-│                                                                           │
+│                                                                         │
 │  ┌─────────────────────────────────────────────────────────────┐        │
 │  │  Phase 4: Translation (50-65%)                              │        │
 │  │  ┌────────────────────────────────────────────────┐         │        │
 │  │  │ Translation Dataset Service                    │         │        │
 │  │  │ Strategy Cascade:                              │         │        │
 │  │  │                                                │         │        │
-│  │  │ 1. Exact Match      ─→ confidence: 1.0        │         │        │
+│  │  │ 1. Exact Match      ─→ confidence: 1.0         │         │        │
 │  │  │    phrase_index lookup                         │         │        │
 │  │  │                                                │         │        │
-│  │  │ 2. Normalized Match ─→ confidence: 0.95       │         │        │
+│  │  │ 2. Normalized Match ─→ confidence: 0.95        │         │        │
 │  │  │    lowercase, strip punctuation                │         │        │
 │  │  │                                                │         │        │
-│  │  │ 3. Fuzzy Match      ─→ confidence: 0.7-0.9    │         │        │
+│  │  │ 3. Fuzzy Match      ─→ confidence: 0.7-0.9     │         │        │
 │  │  │    fuzzywuzzy similarity > 85%                 │         │        │
 │  │  │                                                │         │        │
-│  │  │ 4. Dictionary       ─→ confidence: 0.6        │         │        │
+│  │  │ 4. Dictionary       ─→ confidence: 0.6         │         │        │
 │  │  │    DuBois dictionary word lookup               │         │        │
 │  │  │                                                │         │        │
-│  │  │ 5. Unknown Flag     ─→ confidence: 0.0        │         │        │
+│  │  │ 5. Unknown Flag     ─→ confidence: 0.0         │         │        │
 │  │  │    [UNKNOWN: text]                             │         │        │
 │  │  └────────────────────────────────────────────────┘         │        │
 │  │                         +                                   │        │
@@ -163,69 +163,69 @@
 ## Data Flow: Layout Preservation
 
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                          INPUT PDF                                       │
+│                          INPUT PDF                                      │
 │  ┌─────────────────────────────────────────────────────────┐            │
-│  │                                                          │            │
-│  │  [LOGO]                                                  │            │
+│  │                                                         │            │
+│  │  [LOGO]                                                 │            │
 │  │  ══════════════════════════════════════════             │            │
-│  │                                                          │            │
-│  │  Heading Text Here                                       │            │
-│  │                                                          │            │
+│  │                                                         │            │
+│  │  Heading Text Here                                      │            │
+│  │                                                         │            │
 │  │  This is a paragraph with some text content.            │            │
-│  │  It has multiple lines and maintains formatting.         │            │
-│  │                                                          │            │
-│  │  • Bullet point one                                      │            │
-│  │  • Bullet point two                                      │            │
-│  │                                                          │            │
-│  │        [IMAGE]                                           │            │
-│  │                                                          │            │
+│  │  It has multiple lines and maintains formatting.        │            │
+│  │                                                         │            │
+│  │  • Bullet point one                                     │            │
+│  │  • Bullet point two                                     │            │
+│  │                                                         │            │
+│  │        [IMAGE]                                          │            │
+│  │                                                         │            │
 │  └─────────────────────────────────────────────────────────┘            │
-└────────────────────────┬─────────────────────────────────────────────────┘
+└────────────────────────┬────────────────────────────────────────────────┘
                          │
                          │ EXTRACTION
                          ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                    STRUCTURED PAGE DATA                                  │
+│                    STRUCTURED PAGE DATA                                 │
 ├─────────────────────────────────────────────────────────────────────────┤
 │  Page 0 (width: 612, height: 792)                                       │
-│                                                                           │
+│                                                                         │
 │  NON-TEXT OBJECTS (copied as-is):                                       │
 │  • image(bbox: [100, 50, 200, 100])    ← Logo                           │
 │  • line(bbox: [50, 110, 562, 112])     ← Horizontal line                │
 │  • image(bbox: [200, 400, 400, 500])   ← Image                          │
-│                                                                           │
+│                                                                         │
 │  TEXT BLOCKS (translated):                                              │
 │  • block_1(bbox: [50, 130, 300, 150])                                   │
 │    text: "Heading Text Here"                                            │
-│    font: Arial-Bold, size: 16, color: (0,0,0)                          │
-│                                                                           │
+│    font: Arial-Bold, size: 16, color: (0,0,0)                           │
+│                                                                         │
 │  • block_2(bbox: [50, 170, 562, 210])                                   │
 │    text: "This is a paragraph with some text content..."                │
-│    font: Arial, size: 11, color: (0,0,0)                               │
-│                                                                           │
+│    font: Arial, size: 11, color: (0,0,0)                                │
+│                                                                         │
 │  • block_3(bbox: [70, 230, 562, 250])                                   │
 │    text: "• Bullet point one"                                           │
-│    font: Arial, size: 11, color: (0,0,0)                               │
-│                                                                           │
+│    font: Arial, size: 11, color: (0,0,0)                                │
+│                                                                         │
 │  • block_4(bbox: [70, 250, 562, 270])                                   │
 │    text: "• Bullet point two"                                           │
-│    font: Arial, size: 11, color: (0,0,0)                               │
+│    font: Arial, size: 11, color: (0,0,0)                                │
 └─────────────────────────────────────────────────────────────────────────┘
                          │
                          │ TRANSLATION
                          ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                       TRANSLATION RESULTS                                │
+│                       TRANSLATION RESULTS                               │
 ├─────────────────────────────────────────────────────────────────────────┤
 │  "Heading Text Here" ──→ "Pamagat ng Teksto Dito"                       │
 │    method: exact, confidence: 1.0                                       │
-│                                                                           │
+│                                                                         │
 │  "This is a paragraph..." ──→ "Ito ay isang talata..."                  │
 │    method: fuzzy, confidence: 0.85                                      │
-│                                                                           │
+│                                                                         │
 │  "Bullet point one" ──→ "Unang bullet point"                            │
 │    method: normalized, confidence: 0.95                                 │
-│                                                                           │
+│                                                                         │
 │  "Bullet point two" ──→ "Ikalawang bullet point"                        │
 │    method: normalized, confidence: 0.95                                 │
 └─────────────────────────────────────────────────────────────────────────┘
@@ -233,22 +233,22 @@
                          │ RECONSTRUCTION
                          ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                        OUTPUT PDF                                        │
+│                        OUTPUT PDF                                       │
 │  ┌─────────────────────────────────────────────────────────┐            │
-│  │                                                          │            │
+│  │                                                         │            │
 │  │  [LOGO] ← Same position (100, 50, 200, 100)             │            │
 │  │  ══════════════════════════════════════════             │            │
 │  │         ← Same position (50, 110, 562, 112)             │            │
 │  │  Pamagat ng Teksto Dito ← Translated text               │            │
-│  │                           Same bbox (50, 130, 300, 150)  │            │
-│  │  Ito ay isang talata... ← Translated text                │            │
-│  │                          Same bbox (50, 170, 562, 210)   │            │
-│  │                                                          │            │
-│  │  • Unang bullet point ← Translated                       │            │
-│  │  • Ikalawang bullet point                                │            │
-│  │                                                          │            │
-│  │        [IMAGE] ← Same position (200, 400, 400, 500)      │            │
-│  │                                                          │            │
+│  │                           Same bbox (50, 130, 300, 150) │            │
+│  │  Ito ay isang talata... ← Translated text               │            │
+│  │                          Same bbox (50, 170, 562, 210)  │            │
+│  │                                                         │            │
+│  │  • Unang bullet point ← Translated                      │            │
+│  │  • Ikalawang bullet point                               │            │
+│  │                                                         │            │
+│  │        [IMAGE] ← Same position (200, 400, 400, 500)     │            │
+│  │                                                         │            │
 │  └─────────────────────────────────────────────────────────┘            │
 └─────────────────────────────────────────────────────────────────────────┘
 

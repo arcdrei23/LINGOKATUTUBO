@@ -1,0 +1,1017 @@
+﻿FALSE,pair_id,topic,tagabawa,cebuano,filipino,english,,notes
+TRUE,P001,visiting,Ágpanumbalé,Pagbisita,Pagdalaw,Visiting,,
+FALSE,P002,visiting,Madigár,Maayo,Kamusta,Hello,,
+FALSE,P003,visiting,Áskiyu kannê!,Kamo diay!,Kayo pala!,"Oh, it's you!",,plural
+FALSE,P004,visiting,Allus kó,Dayun mo,Tulay po kayo,Come ahead,,plural
+FALSE,P005,visiting,Pénék kó,Saka mo,Umakyat kayo,Come up,,plural
+FALSE,P006,visiting,Ahu kó,Sulod mo,Pasok po kayo,Come in,,plural
+FALSE,P007,visiting,Unsad kó,Lingkod mo,Maupo kayo,Sit down,,plural
+FALSE,P008,visiting,Unsad kó,Lingkod mo,Maupo kayo,Have a seat,,plural
+FALSE,P009,visiting,Ándinné gulitán yu?,Unsa inyong tuyo?,Anong kailangan ninyo?,Why have you come?,,plural
+FALSE,P010,visiting,Ándinné kalyag nu?,Unsa imong gusto?,Anong gusto mo?,Is there something you want?,,
+FALSE,P011,visiting,Ándin ég kadigárran nu?,Unsa imong nagustohan?,Anong gusto mo talaga?,What is it you would like?,,need to double check
+FALSE,P012,visiting,Ándin ég kailanganán nu?,Unsay imong kinahanglan?,Mayroon ka bang kailangan?,Is there something you need?,,
+FALSE,P013,visiting,Ándà kalyag ku dád,Wala man,Wala naman,Nothing in particular,,
+FALSE,P014,visiting,Duwán pád gulitán kuk nikó,Naa unta koy hangyu sa imoha,Mayroon akong ipakikiusap sa iyo,I have a favor to ask of you,,need to double check
+FALSE,P015,visiting,Ándin man?,Unsa man?,Ano ba yon?,What is it?,,
+FALSE,P016,visiting,Mému mállássa katô pala nu?,Mahimu ba mohulam ko sa imong pala?,Puede bang mahiram ang pala mo?,May I borrow your shovel?,,
+FALSE,P017,visiting,Ulián ku dád kanik mapun,Iuli lang nako unyang hapon,Isasauli ko rin mamayang hapon,I'll return it this afternoon,,
+FALSE,P018,visiting,Mállássa pád áknikó ka salapì kaliman pisus?,Mohulam unta ko nimo ug kwarta bali singkwenta pisos?,Puede ba akong manghiram ng limangpung piso sa iyo?,May I please borrow fifty pesos from you?,,
+FALSE,P019,visiting,"Óó, pabállássán kus kuna ka kaliman pisus","Oo, pahulamon ta ka ug singkwenta pisos","Oo, pahihiramin kita ng limangpung piso","Yes, I'll lend you fifty pesos",,
+FALSE,P020,visiting,"Salamat, bullasan kù nit dumunggù linggu","Salamat, ilisan lang nako sa sunod simana","Salamat, babayaran ko sa susunod na linggo","Thank you, I'll return it next week",,
+FALSE,P021,visiting,Muna ad ákniyu,Mouna ko sa inyoha,Mauuna na ako sa inyo,I'll go on ahead of you,,plural
+FALSE,P022,visiting,Mulì ad,Mouli nako,Uuwi na ako,I'll be going home now,,
+FALSE,P023,visiting,Panó kid,Adto na ta,Tayo na,Let's go now,,
+FALSE,P024,visiting,Lónód ka,Balik lang,Balik ka lang uli,Come again,,
+FALSE,P025,visiting,"Óó, lumónóddô","Oo, mobalik lang ko","Oo, babalik ako","Yes, I'll certainly come back",,
+FALSE,P026,,Tut dalan,Sa dalan,Sa daan,On the path,,
+FALSE,P027,on_the_path,Ándayé igtikudan nu?,Asa ka gikan?,Saan ka galing?,Where have you come from?,,
+FALSE,P028,on_the_path,Ándayé sadunan nu?,Asa ka moadto?,Saan ka pupunta?,Where are you going?,,auto-split from slash values
+FALSE,P029,on_the_path,Mánda ka?,Asa ka moadto?,Saan ka pupunta?,Where are you going?,,auto-split from slash values
+FALSE,P030,on_the_path,Taddô dád,Diha lang,Diyan lang,Just over there,,
+FALSE,P031,on_the_path,Madunna tuk niyu,Moadto ako sa inyoha,Pupunta ako sa inyo,I'm going to your place,,plural
+FALSE,P032,on_the_path,Madunna tut munisipyu,Moadto ko sa munisipyu,Pupunta ako sa munisipyu,I'm going to the post office,,need to double check
+FALSE,P033,on_the_path,Mamalingkiyad.,Mamalingki ko,Mamamalengke ako,I'm going to the market,,auto-split from slash values
+FALSE,P034,on_the_path,Mamálliya,Mamalingki ko,Mamamalengke ako,I'm going to the market,,auto-split from slash values
+FALSE,P035,on_the_path,Madunna dád tug babà,Moadto lang ko sa ubus,Pupunta lang ako sa baba,I'm just going down there,,
+FALSE,P036,on_the_path,Madunna dád tun daya,Moadto lang ko sa ibabaw,Pupunta lang ako sa taas,I'm just going up there,,
+FALSE,P037,,Tut baryu,Sa baryo,Sa nayon,At the village,,
+FALSE,P038,at_the_village,Madigár góddóan ni lugar yu,Ang inyong lugar maayong puy-an,Magandang tirahan ang inyong lugar,Your place is a nice place to live,,plural
+FALSE,P039,at_the_village,Ágkadigárranna dini su masunay,Gusto ko diri kay malinawon nga lugar,Gusto ko rito dahil tahimik na lugar,I like it here because it's peaceful,,
+FALSE,P040,at_the_village,Ánda tô ámmà nu asta innà nu?,Asa ang imong amahan ug inahan?,Nasaan ang mga magulang mo?,Where are your parents?,,
+FALSE,P041,at_the_village,"Tô ámmà ku tun datas, na tô innà ku tut wayig","Ang akong amahan didto sa taas, ug ang akong inahan didto sa sapa",Ang tatay ay nasa itaas at ang nanay ko po naman ay nasa ilog,"My father is upstairs, and my mother is at the river",,
+FALSE,P042,at_the_village,Taddô ta balé,Naa diha sa balay,Nandiyan po sa bahay,There at the house,,
+FALSE,P043,at_the_village,Ándayé góddóan katô amayánnán nu?,Asa nagpuyo ang imong uyuan?,Saan nakatira ang iyong tiyuhin?,Where does your uncle live?,,
+FALSE,P044,at_the_village,Tô amayánnán kuwé góddô katô balé tut bókkóg katô simbaan,Ang akong uyuan ang nagpuyo sa balay sa likud sa simbahan,Ang aking tiyuhin ang nakatira sa bahay na nasa likod ng simbahan,My uncle lives in the house behind the church,,
+FALSE,P045,at_the_village,Ádding ka pa,Hapit sa,Daan ka muna,Stop in,,singular
+FALSE,P046,at_the_village,Ádding kó pa,Hapit sa mo,Daan muna kayo,Stop in,,plural
+FALSE,P047,at_the_village,"Dì dán, lumabéyad","Di na, molabay lang ku","Wag na, dadaan lang kami","Not now, I'll pass on by",,auto-split from slash values
+FALSE,P048,at_the_village,"Dì dán, lumabé kéd","Di na, molabay lang mi","Wag na, dadaan lang kami","Not now, we'll pass on by",,auto-split from slash values
+FALSE,P049,at_the_village,Diyad mádding sug lukutta,Di na ko mohapit kay gadali ko,Hindi na nagmamadali ako,I will not stop in because I'm in a hurry,,
+FALSE,P050,at_the_village,Pénék kó,Saka lang mo,Umakyat kayo,Come up,,you pl; auto-split from slash values
+FALSE,P051,at_the_village,Pénék kó dun,Saka lang mo diha,Umakyat kayo d'yan,Go on up there,,you pl; auto-split from slash values
+FALSE,P052,at_the_village,Pónóg kó.,Kanaug mo,Bumaba kayo,Go on down ,,you pl; auto-split from slash values
+FALSE,P053,at_the_village,Pónóg kó dun,Kanaug mo diha,Bumaba kayo d'yan, Get down from there,,you pl; auto-split from slash values
+FALSE,P054,,Ágpatóngkóé tun dalám ka balé,Nagistoryahanay sa sulod sa balay,Pagkukuwentohan sa loob ng bahay,Conversation at home,,
+FALSE,P055,conversation_at_home,Ándà sóddór ku,Wala ko kahibalo,Hindi ko alam,I don't know,,
+FALSE,P056,conversation_at_home,Tógón din,Pasagdi lang,Hindi bale,Never mind,,
+FALSE,P057,conversation_at_home,Áskuna,Ikaw,Ikaw,It's up to you,,auto-split from slash values
+FALSE,P058,conversation_at_home,Tamak nikó,Ambot sa imo,Aywan ko sa iyo,I don't know about you,,auto-split from slash values
+FALSE,P059,conversation_at_home,Sakán dán,Ako na lang,Ako na lang,I'll do it,,
+FALSE,P060,conversation_at_home,Panówad,Molakaw na ko,Aalis na ako,I'll go now,,
+FALSE,P061,conversation_at_home,Sadun ka dini,Dali diri,Halika rito,Come here,,
+FALSE,P062,conversation_at_home,Sadun ka pa dini,Dali sa diri,Halika muna rito,Come here first,,
+FALSE,P063,conversation_at_home,Piddiya ka kuk,Dalhi ko ug coke,Dalhan mo ako ng coke,Bring me a Coke,,
+FALSE,P064,conversation_at_home,Pókê nu yan sállat,Ablihi ang pultahan,Buksan mo ang pinto,Open the door,,
+FALSE,P065,conversation_at_home,Sagpáng nu tô téwang,Siraduhi ang bintana,Isara mo ang bintana,Close the window,,
+FALSE,P066,conversation_at_home,Angat ka pa dógó,Hulat sa kadali,Sandali lang,Wait a minute,,auto-split from slash values
+FALSE,P067,conversation_at_home,Dógó dád,Dali lang,Sandali lang,Just a minute,,auto-split from slash values
+FALSE,P068,conversation_at_home,Tákkás ka kanak,Uban sa akoa,Sumama ka sa akin,Come with me,,
+FALSE,P069,conversation_at_home,Sadanné duma nu?,Kinsa ang imong kauban?,Sinong kasama mo?,Who is with you?,,
+FALSE,P070,conversation_at_home,Ikasóddór ka katô mayur dut lugar dun?,Kaila ka ba sa mayor dihang dapita?,Kilala mo ba ang alkalde sa lugar na iyon?,Do you know the mayor of that place?,,
+FALSE,P071,conversation_at_home,Igkilala a ka báttuk din,Kaila ko sa iyaha sa nawong,Kilala ko siya sa mukha,I know him by sight,,
+FALSE,P072,conversation_at_home,Sadanné ngadan din?,Kinsa ang iyang ngalan?,Anong pangalan niya?,What is his name?,,
+FALSE,P073,conversation_at_home,Ándà ku kasampátti,Wala ko kahinumdom,Hindi ko matandaan,I don't remember,,
+FALSE,P074,conversation_at_home,Milingówa,Nakalimut ko,Hindi ko maalaala,I forgot,,
+FALSE,P075,conversation_at_home,Ilingawan kud,Nalimtan na nako,Nakalimutan ko na,I have forgotten it,,
+FALSE,P076,conversation_at_home,Ágkamánnu ka?,Naunsa ka?,Napaano ka?,What's the matter with you?,,
+FALSE,P077,conversation_at_home,Imánnu ka?,Unsay nahitabo sa imoha?,Anong nangyari sa iyo?,What happened to you?,,singular
+FALSE,P078,conversation_at_home,Nannu tô batà nu?,Kumusta ang imong anak?,Kumusta ang iyong anak?,How is your child?,,
+FALSE,P079,conversation_at_home,Madigár dán,Maayo na,Magaling na s'ya,He is well now,,
+FALSE,P080,conversation_at_home,Ándin ég lumun nu?,Unsay imong gibuhat?,Anong ginagawa mo?,What are you doing?,,singular
+FALSE,P081,conversation_at_home,Mému tákkássanna ikuna?,Mahimu ba nga ubanan ko nimo?,Makasasama ka ba sa akin?,Can you go with me?,,
+FALSE,P082,conversation_at_home,Áglukutta,Nagdali ko,Nagmamadali ako,I'm in a hurry,,
+FALSE,P083,conversation_at_home,Kadigárrannad kuman,Gusto ko mokaon na,Gusto ko nang kumain,I'd like to eat now,,
+FALSE,P084,conversation_at_home,Tumuduggad,Motulog na ko,Matutulog na ako,I'm going to sleep now,,
+FALSE,P085,conversation_at_home,Tô makagi ka duwán mantu ágpakitaé,Ang masulti sa tawong bag-ong gikahibalag,Ang masabi sa bagong nagkita,What to say to people you meet,,
+FALSE,P086,conversation_at_home,Taga ánda ka man kannê?,Taga asa g'yud ka diay?,Taga saan ka ba talaga?,Where are you from originally?,,
+FALSE,P087,conversation_at_home,Sadanné ngadan nu?,Kinsa imong ngalan?,Anong pangalan mo?,What's your name?,,
+FALSE,P088,conversation_at_home,Ándinné tawar kuk nikó?,Unsay akong itawag nimo?,Anong itatawag ko sa iyo?,What should I call you?,,
+FALSE,P089,conversation_at_home,Sakán si ,Ako si ,Ako'y si ,I'm ,,
+FALSE,P090,conversation_at_home,Ándayé góddóan nu áknganni?,Asa ka nagpuyo karon?,Saan ka nakatira ngayon?,Where are you staying now?,,
+FALSE,P091,conversation_at_home,Ándayé igtikudan nu ni?,Asa ka gikan karon?,Saan ka galing ngayon?,Where did you just come from?,,
+FALSE,P092,conversation_at_home,Makatabang ka kanak?,Makatabang ka ba sa akoa?,Matutulungan mo ba ako?,Can you help me?,,
+FALSE,P093,conversation_at_home,Ándinné matabang kuk nikó?,Unsa ang akong matabang sa imoha?,Anong maitutulong ko sayo?,What can I do for you?,,
+FALSE,P094,conversation_at_home,Gahà a dád,Nagbisita lang ko,Dumadalaw lang ako,I just came to visit,,
+FALSE,P095,conversation_at_home,Ni ka pa góg dunggù?,Karon ka lang miabot?,Kararating mo lang ba?,Have you just arrived?,,
+FALSE,P096,conversation_at_home,Géna a pô,Kaganina ra,Kani kanina lang,Just awhile ago,,
+FALSE,P097,conversation_at_home,"Óó, baniya pa igdunggù tikud tut Bukidnon",Oo gahapon lang ko miabot gikan sa Bukidnon,"Oo, kararating ko lang kahapon mula sa Bukidnon","Yes, I came just yesterday from Bukidnon",,
+FALSE,P098,family,Tô pamilya,Ang pamilya,Ang mag-anak,The family,,
+FALSE,P099,family,Manté pô tô ámmà nu?,Buhi pa ba ang imong amahan?,Buhay pa ba ang tatay mo?,Is your father still living?,,
+FALSE,P100,family,"Óó, asal tô innà ku inaté dán tô iglabé ámmé","Oo, pero ang akong inahan namatay na tong miaging tuig","Oo, pero namatay ang nanay ko noong nakaraang taon","Yes, but my mother died last year",,
+FALSE,P101,family,Pira kó langun mataladi?,Pila mo tanang magsoon?,Ilan kayong magkakapatid?,How many brothers and sisters do you have?,,
+FALSE,P102,family,Walu ké mataladi,Walo ming magsoon,Walo kaming magkakapatid,There are eight of us,,
+FALSE,P103,family,Áskunayé tambang kaké?,Ikaw ba ang kinamagulangan?,Ikaw ba ang panganay?,Are you the eldest?,,
+FALSE,P104,family,"Ánnà, sakánné tambang adi","Dili, ako ang kamanghuran","Hindi, ako po ang bunso","No, I'm the youngest",,
+FALSE,P105,family,Pira dánné idad nu?,Pila na ang imong idad?,Ilang taon ka na?,How old are you?,,
+FALSE,P106,family,Sapulù dán é idad ku,Napulo na ang idad ko,Sampung taon na ako,I'm already ten years old,,
+FALSE,P107,family,Duwán dán sawa nu?,Naa ka nay asawa?,May asawa ka na ba?,Do you have a wife?,,
+FALSE,P108,family,Ándà pa,Wala pa,Wala pa,Not yet,,
+FALSE,P109,family,Duwán dán duma nu?,Naa ka nay bana?,May asawa ka na ba?,Do you have a husband?,,
+FALSE,P110,family,Duwán dán,Naa na,Mayroon na,I have,,auto-split from slash values
+FALSE,P111,family,Duwán dán,Naa na,Mayroon na,I do,,auto-split from slash values
+FALSE,P112,family,Duwán dán gabatà nu?,Naa ka nay mga anak?,May mga anak ka na ba?,Do you have children?,,
+FALSE,P113,family,"Óó, lima dánné gabatà ku","Oo, naa na koy lima ka anak","Oo, mayroon na akong limang anak","Yes, I have five children",,
+FALSE,P114,family,Duwayé gabayi asta tálluwé gamama,Duha ka babaye ug tulo ka lalaki,Dalawang babae at tatlong lalaki,Two girls and three boys,,
+FALSE,P115,relationships,Kadumaan asta duwán kadaddanan ,Relasyon,Relasyon,Relationships,,
+FALSE,P116,relationships,ámmà,amahan,ama,father,,
+FALSE,P117,relationships,innà,inahan,ina,mother,,
+FALSE,P118,relationships,batà,anak,anak,son,,auto-split from slash values
+FALSE,P119,relationships,batà,anak,anak,daughter,,auto-split from slash values
+FALSE,P120,relationships,duma,bana,asawa,husband,,auto-split from slash values
+FALSE,P121,relationships,sawa,asawa,asawa,wife,,auto-split from slash values
+FALSE,P122,relationships,balu,balo,biyudo,widower,,auto-split from slash values
+FALSE,P123,relationships,balu,balo,biyuda,widow,,auto-split from slash values
+FALSE,P124,relationships,banà,trato,nobyo,fiancé,,auto-split from slash values
+FALSE,P125,relationships,tratu,trato,nobya,fiancée,,auto-split from slash values
+FALSE,P126,relationships,mataladi,magsoon,kapatid,brother-brother,,auto-split from slash values
+FALSE,P127,relationships,mataladi,magsoon,kapatid,sister-sister,,auto-split from slash values
+FALSE,P128,relationships,tábbé,magsoon,magkapatid,brother-sister,,auto-split from slash values
+FALSE,P129,relationships,talatábbé,magsoon,magkapatid,brother-sister,,auto-split from slash values
+FALSE,P130,relationships,adi,manghod,kapatid na mas bata sa akin,younger sibling,,
+FALSE,P131,relationships,kaké,magulang,kapatid na mas matanda sa akin,elder sibling,,
+FALSE,P132,relationships,tambang adi,kamanghuran,bunso,youngest child,,auto-split from slash values
+FALSE,P133,relationships,tampus adi,kamanghuran,bunso,youngest child,,auto-split from slash values
+FALSE,P134,relationships,tambang kaké,kamagulangan,panganay,eldest child,,
+FALSE,P135,relationships,apù,apohan,nuno,grandparent,,
+FALSE,P136,relationships,apù,apo,apo,grandchild,,
+FALSE,P137,relationships,bataánnán,pag-umangkon,pamangkin,nephew,,auto-split from slash values
+FALSE,P138,relationships,bataánnán,pag-umangkon,pamangkin,niece,,auto-split from slash values
+FALSE,P139,relationships,ágpémaluyé,ig-agaw,pinsan,first cousin,,auto-split from slash values
+FALSE,P140,relationships,imaluy kataladi,ig-agaw,pinsan,first cousin,,auto-split from slash values
+FALSE,P141,relationships,ugang,ugangan,biyanan,parent-in-law,,
+FALSE,P142,relationships,bayó,bayaw,bayaw,brother-in-law,,between men
+FALSE,P143,relationships,ayù,bayaw,hipag,sister-in-law,,between women
+FALSE,P144,relationships,bilas,bilas,bilas,spouse relation of married brothers,,auto-split from slash values
+FALSE,P145,relationships,bilas,bilas,bilas,sisters,,auto-split from slash values
+FALSE,P146,relationships,ipag,hipag,hipag,sister-in-law,,between men / women
+FALSE,P147,relationships,ikóddô,umagad,manugang,son-in-law,,auto-split from slash values
+FALSE,P148,relationships,ikóddô,binalaye,manugang,daughter-in-law,,auto-split from slash values
+FALSE,P149,relationships,kataladi ,paryente,kamag-anak,relative,,singular
+FALSE,P150,relationships,kadaddanan,paryente,kamag-anak,relatives,,plural
+FALSE,P151,relationships,mógóskami ,paryente,kamag-anak,relative,,singular
+FALSE,P152,relationships,kaditaan,paryente,kamag-anak,relatives,,plural
+FALSE,P153,relationships,karawuyan,paryente,kamag-anak,relative,,singular
+FALSE,P154,relationships,kadumaan,katagilungsod,kababayan,townmate,,
+FALSE,P155,relationships,rarak,higala,kaibigan,friend,,
+FALSE,P156,relationships,usig,kaaway,kaaway,enemy,,auto-split from slash values
+FALSE,P157,relationships,usig,kontra,kalaban,enemy,,auto-split from slash values
+FALSE,P158,relationships,manubù,tawo,tao,person,,
+FALSE,P159,relationships,mama,lalaki,lalaki,male,,auto-split from slash values
+FALSE,P160,relationships,mama,lalaki,mama,male,,auto-split from slash values
+FALSE,P161,relationships,bayi,babaye,babae,female,,
+FALSE,P162,relationships,batà,bata,bata,child,,
+FALSE,P163,relationships,burayì,masuso,sanggol,infant,,auto-split from slash values
+FALSE,P164,relationships,délák batà,masuso,sanggol,infant,,auto-split from slash values
+FALSE,P165,relationships,mallaki,ulitawo,binata,bachelor,,auto-split from slash values
+FALSE,P166,relationships,mallaki,ulitawo,binata,unmarried man,,auto-split from slash values
+FALSE,P167,relationships,daraga,dalaga,dalaga,young woman,,unmarried; auto-split from slash values
+FALSE,P168,relationships,dalaga,dalaga,dalaga,young woman,,unmarried; auto-split from slash values
+FALSE,P169,relationships,tugál mama,tigulang lalaki,matandang lalaki,old man,,
+FALSE,P170,relationships,tugál bayi,tigulang babaye,matandang babae,old woman,,
+FALSE,P171,relationships,simbalé,silingan,kapitbahay,neighbor,,
+FALSE,P172,,Ágkémun,Kinaiya,Ugali,Behavior,,
+FALSE,P173,,Ágkémun,Batasan,Ugali,Character,,
+FALSE,P174,behavior_character,ágburángburáng,gabagulbul,reklamador,grumbling,,manual check: slash values
+FALSE,P175,behavior_character,ágburángburáng,gabagulbul,reklamador,complaining,,
+FALSE,P176,behavior_character,ágburángburáng,gabagulbul,reklamador,murmuring,,
+FALSE,P177,behavior_character,ágduwaduwa,nagduhaduha,nagdadalawang isip,uncertain,,manual check: slash values
+FALSE,P178,behavior_character,ágduwaduwa,nagduhaduha,nagdadalawang isip,ambivalent,,
+FALSE,P179,behavior_character,ágduwaduwa,nagduhaduha,nagdadalawang isip,hesitant,,
+FALSE,P180,behavior_character,ágginawa,mahigugmaon,malambing,affectionate,,manual check: slash values
+FALSE,P181,behavior_character,ágginawa,mahigugmaon,mapaagmahal,affectionate,,
+FALSE,P182,behavior_character,ágginawa,mahigugmaon,magiliw,affectionate,,
+FALSE,P183,behavior_character,ágkangulág,nagpabuang-buang,baliw ,crazy,,manual check: slash values
+FALSE,P184,behavior_character,ágngulágngulág,nagpabuang-buang,nagkukunwaring sira ulo,pretending to be a fool,,
+FALSE,P185,behavior_character,ágkasannaan,kapiyalan,mapagkatiwalaan,honest,,auto-split from slash values
+FALSE,P186,behavior_character,ágkasarigan,kasaligan,mapagkatiwalaan,trustworthy,,auto-split from slash values
+FALSE,P187,behavior_character,ágkasókó,masuko,galit,angry,,auto-split from slash values
+FALSE,P188,behavior_character,ágkasókó,masuko,galit,angered,,auto-split from slash values
+FALSE,P189,behavior_character,dì sékót ágkasókó,dili dali masuko,hindi madaling nagagalit,not easily angered,,
+FALSE,P190,behavior_character,ágkéduwan,maluoy,maawain,merciful,,auto-split from slash values
+FALSE,P191,behavior_character,méduwédu,maluluy-on,maawain,compassionate,,auto-split from slash values
+FALSE,P192,behavior_character,áglimáddang,manghadluk,natatakut,frightening,,person
+FALSE,P193,behavior_character,áglumu,nagbuhat,masipag,hard working,,auto-split from slash values
+FALSE,P194,behavior_character,áglumu,motrabaho,masipag,hard working,,auto-split from slash values
+FALSE,P195,behavior_character,ágnunug,misugot,masunurin,agreeable,,auto-split from slash values
+FALSE,P196,behavior_character,ágnunug,misugot,masunurin,compliable,,auto-split from slash values
+FALSE,P197,behavior_character,ássa,lahi,kaiba,different,,auto-split from slash values
+FALSE,P198,behavior_character,ássa,lahi,kaiba,distinct,,auto-split from slash values
+FALSE,P199,behavior_character,ágtammud,gakusmod,nakasimangot,frowning,,
+FALSE,P200,behavior_character,ágtanud,abubhoan,siluso,jealous,,
+FALSE,P201,behavior_character,balingisin,palakatawa,palaging nakangiti,smiling,,auto-split from slash values
+FALSE,P202,behavior_character,balingisin,palakatawa,masayahin,cheerful countenance,,auto-split from slash values
+FALSE,P203,behavior_character,barétbétan,sabaan,madaldal,talkative,,auto-split from slash values
+FALSE,P204,behavior_character,barétbétan,tabian,madaldal,gossipy,,auto-split from slash values
+FALSE,P205,behavior_character,bulalón,bakakon,sinungaling,liar,,
+FALSE,P206,behavior_character,dì ágbaránnás,hilomon,tahimik,quiet person,,
+FALSE,P207,behavior_character,lággáddán,dalo,madamot,miserly,,auto-split from slash values
+FALSE,P208,behavior_character,lággáddán,tihik,madamot,stingy,,auto-split from slash values
+FALSE,P209,behavior_character,mabákkár,kusgan,malakas,strong,,
+FALSE,P210,behavior_character,mabbabà é ginawa,mabaw ug pailub,pikon,short tempered,,auto-split from slash values
+FALSE,P211,behavior_character,mabbabà é ginawa,mabaw ug pailub,pikon,easily provoked to anger,,auto-split from slash values
+FALSE,P212,behavior_character,madat,lain,masama,bad,,
+FALSE,P213,behavior_character,madigár,maayo,mabuti,good,,
+FALSE,P214,behavior_character,magani,isog,matapang,bold ,,manual check: slash values
+FALSE,P215,behavior_character,magani,isog,matapang, brave,,
+FALSE,P216,behavior_character,magani,isog,matapang,agressive,,
+FALSE,P217,behavior_character,mallayat é ginawa,mapailubon,mapagpasensiya,patient,,auto-split from slash values
+FALSE,P218,behavior_character,mallayat é ginawa,mapailubon,mapagpasensiya,longsuffering,,auto-split from slash values
+FALSE,P219,behavior_character,malóggód,makugihan,masipag,industrious,,auto-split from slash values
+FALSE,P220,behavior_character,malóggód,makugihan,masipag,diligent,,auto-split from slash values
+FALSE,P221,behavior_character,malómétán,luyahon,mabagal,sluggish,,
+FALSE,P222,behavior_character,mangayó,manunulong,manglulusob,raider,,auto-split from slash values
+FALSE,P223,behavior_character,mangayó,manunulong,mamatay tao,killer,,auto-split from slash values
+FALSE,P224,behavior_character,mapabbabà,mapaubsanon,mapagpakumbaba,humble,,
+FALSE,P225,behavior_character,matalláng,matarung,mabait,careful,,manual check: slash values
+FALSE,P226,behavior_character,matalláng,matarung,mabait,upright,,
+FALSE,P227,behavior_character,matalláng,matarung,mabait,honest,,
+FALSE,P228,behavior_character,mataló,talawan,duwag,cowardly,,auto-split from slash values
+FALSE,P229,behavior_character,mataló,talawan,duwag,fearful,,auto-split from slash values
+FALSE,P230,behavior_character,matannáb,maligdong,marangal,dignified,,auto-split from slash values
+FALSE,P231,behavior_character,matannáb,maligdong,marangal,reserved,,auto-split from slash values
+FALSE,P232,behavior_character,matággas é ulu,gahi ug ulo,matigas ang ulo,stubborn,,
+FALSE,P233,behavior_character,mayyà,maulaw,mahiyain, shy,,manual check: slash values
+FALSE,P234,behavior_character,ágkayyaan,maulawon,mahiyain,embarrassed,,
+FALSE,P235,behavior_character,máddangán,hadlokan,matakutin,easily frightened,,auto-split from slash values
+FALSE,P236,behavior_character,máddangán,mahadlukon,matakutin,timorous,,auto-split from slash values
+FALSE,P237,behavior_character,méla,idlas,mailap,elusive,,auto-split from slash values
+FALSE,P238,behavior_character,méla,idlas,mailap,wary,,auto-split from slash values
+FALSE,P239,behavior_character,sékót ágkapid,dali madala,madaling maisama,easily influenced,,manual check: slash values
+FALSE,P240,behavior_character,malumák é idung,dali madala,madaling mahikayat,easily persuaded,,
+FALSE,P241,behavior_character,tagawán,hakogan,suwapang,greedy,,
+FALSE,P242,behavior_character,takón,kawatan,magnanakaw,thief,,auto-split from slash values
+FALSE,P243,behavior_character,madat é bállad,hilabtanon,magnanakaw,thief,,auto-split from slash values
+FALSE,P244,behavior_character,tukukán,tapolan,tamad,lazy,,
+FALSE,P245,behavior_character,tullid,tul-id ,matuwid,straight,,manual check: slash values
+FALSE,P246,behavior_character,katullidan,katul-iran,Pagkatuwid,upright,,
+FALSE,P247,,Ágriyun ka pusung,Pagbati,Damdamin,Emotions,,
+FALSE,P248,emotions,ágkadayawan,malipayon,maligaya,happy,,auto-split from slash values
+FALSE,P249,emotions,ágkadayawan,malipayon,masaya,excited,,auto-split from slash values
+FALSE,P250,emotions,ágkaranu,masulub-on,nalulungkot,sad,,auto-split from slash values
+FALSE,P251,emotions,ágkaranu,masulub-on,malungkot,sad,,auto-split from slash values
+FALSE,P252,emotions,ágkatanaan,nabalaka,nag-aalala,worried,,auto-split from slash values
+FALSE,P253,emotions,ágkatanaan,nabalaka,nag-aalala,troubled,,auto-split from slash values
+FALSE,P254,emotions,ágkatingkul,nahiubos,nasasaktan,hurt feelings,,auto-split from slash values
+FALSE,P255,emotions,ágkatingkul,nahiubos,nasaktan,hurt feelings,,auto-split from slash values
+FALSE,P256,emotions,ágkállasán,gikulbaan,kinakabahan,apprehension,,auto-split from slash values
+FALSE,P257,emotions,ágkállasán,gikulbaan,kinakabahan,having racing heartbeat from fear,,auto-split from slash values
+FALSE,P258,emotions,ágliyasán,ginerbyos,matakutin,nervousness,,manual check: slash values
+FALSE,P259,emotions,ágliyasán,ginerbyos,nerbiyosa,nervousness,,
+FALSE,P260,emotions,ágliyasán,ginerbyos,nerbiyoso,nervousness,,
+FALSE,P261,emotions,ágngilam,mabinantayon,mapagbantay,vigilant,,auto-split from slash values
+FALSE,P262,emotions,ágngilam,mabinantayon,maingat,be on the alert,,auto-split from slash values
+FALSE,P263,emotions,bugà,mingaw,panglaw,lonely,,auto-split from slash values
+FALSE,P264,emotions,ágkabugaan,gimingaw,napapanglaw,homesick,,auto-split from slash values
+FALSE,P265,emotions,dayó,kalipay,saya,happiness,,auto-split from slash values
+FALSE,P266,emotions,dayó,kalipay,kaligayahan,happiness,,auto-split from slash values
+FALSE,P267,emotions,ginawa,gugma,pag-ibig,love,,manual check: slash values
+FALSE,P268,emotions,ginawa,gugma,pag-ibig,emotional feeling,,
+FALSE,P269,emotions,ginawa,gugma,pag-ibig,favor,,
+FALSE,P270,emotions,ikabullug é ginawa,nahinayak,napasobo,disappointed,,auto-split from slash values
+FALSE,P271,emotions,ikabullug é ginawa,nahinayak,bigo,disappointed,,auto-split from slash values
+FALSE,P272,emotions,madat é ginawa,nasilu,masama ang loob,depressed,,auto-split from slash values
+FALSE,P273,emotions,masakit é ginawa,nasilu,masama ang loob,injured feelings,,auto-split from slash values
+FALSE,P274,emotions,madigár é ginawa,nahimuut,natutuwa,relieved,,auto-split from slash values
+FALSE,P275,emotions,madigár é kariyu,nahimuut,natutuwa,delighted,,auto-split from slash values
+FALSE,P276,emotions,máddang,kahadlok,takut,fear,,auto-split from slash values
+FALSE,P277,emotions,ágkamáddangan,nahadlok,natatakut,afraid,,auto-split from slash values
+FALSE,P278,emotions,ranu,kasubo,kalungkutan,sadness,,
+FALSE,P279,emotions,ringasa,kapungut,naiinis,anger ,,manual check: slash values
+FALSE,P280,emotions,ringasa,kapungut,naiinis,rage,,
+FALSE,P281,emotions,ringasa,kapungut,naiinis,hatred,,
+FALSE,P282,emotions,sarukur,kahingawa,balisa,distress,,auto-split from slash values
+FALSE,P283,emotions,sarukur,kahingawa,balisa,restless with anxiety,,auto-split from slash values
+FALSE,P284,emotions,sókó,kasuko,galit,anger,,expressed
+FALSE,P285,emotions,tana,kabalaka,nag-aalala,worry,,manual check: slash values
+FALSE,P286,emotions,tana,kabalaka,nag-aalala,tension,,
+FALSE,P287,emotions,tana,kabalaka,nag-aalala,anxiety,,
+FALSE,P288,,Ágriyun ka panámdám,Bation sa hunahuna,Pag-iisip,Thinking,,
+FALSE,P289,,Ágriyun ka panámdám,maghinumdum,Pag-iisip,Thinking,,
+FALSE,P290,thinking,panámdám,hunahuna,isip,thoughts,,auto-split from slash values
+FALSE,P291,thinking,ágpanámdám,naghunahuna,nag-iisip,thinking,,auto-split from slash values
+FALSE,P292,thinking,ágsampát,maghinumdum,isipin,remember,,auto-split from slash values
+FALSE,P293,thinking,kasampáttan,maghinumdum,naalaala,remembrance,,auto-split from slash values
+FALSE,P294,thinking,ágkataláng,nalibug,nalilito,confused,,
+FALSE,P295,thinking,kagpáttan,pagsabot,pag-intindi,understanding,,auto-split from slash values
+FALSE,P296,thinking,kagpáttan,pagsabot,pang-unawa,comprehension,,auto-split from slash values
+FALSE,P297,thinking,kakatigan,kahibalo,kaalaman,knowledge,,manual check: slash values
+FALSE,P298,thinking,kakatigan,kahibalo,kaalaman,skill,,
+FALSE,P299,thinking,kakatigan,kahibalo,kaalaman,ability,,
+FALSE,P300,thinking,kéman,kaingon,akala,supposed,,auto-split from slash values
+FALSE,P301,thinking,kéman,kaingon,akala,assumed,,auto-split from slash values
+FALSE,P302,thinking,ágkatággasan ginagpát,galisod pagsabot,nahihirapan umintindi,difficulty in comprehending,,
+FALSE,P303,,Ágriyun,Gibati,Damdamin,Feeling / Sensing,,
+FALSE,P304,feeling_sensing,Ágkabógókan ka?,Nagsakit ka?,May sakit ka ba?,Are you sick?,,
+FALSE,P305,feeling_sensing,Ágkabógókanna,Nagsakit ko,May sakit ako,I'm sick,,
+FALSE,P306,feeling_sensing,Pahà ka tut duktur,Magpatan-aw ka sa doktor,Magpatingin ka sa doktor,Go to the doctor,,
+FALSE,P307,feeling_sensing,Sadan dukturiyé madigár?,Kinsang doktora ang maayo?,Sino ang mahusay na doktor?,Which doctor is a good one?,,
+FALSE,P308,feeling_sensing,"Si duktur ____, su délák dád ég bayadan","Si doktor ____, kay gamay lang ang bayaran","Si doktor ____, dahil mura siyang sumingil","Doctor ____, because he charges less",,
+FALSE,P309,feeling_sensing,Ándin ég riyun nu?,Unsa ang imong gibati?,Anong pakiramdam mo?,How do you feel?,,
+FALSE,P310,feeling_sensing,Masakitté ulu ku,Sakit ang akong ulo,Masakit ang ulo ko,I have a headache,,
+FALSE,P311,feeling_sensing,Iginutà a dukilám,Nagsuka ko gabii,Nagsuka ako kagabi,I vomited last night,,
+FALSE,P312,feeling_sensing,Ágkabalóyónna asta ménitté lawa ku,Nalipong ko ug naay hilanat,Nahihilo ako at may lagnat,I feel dizzy and have a fever,,
+FALSE,P313,feeling_sensing,Duwán basì karukung ku,Siguro morag naa koy malarya,May malarya yata ako,I may have malaria,,auto-split from slash values
+FALSE,P314,feeling_sensing,Ágkagánnawanna,Siguro morag naa koy malarya,May malarya yata ako,I may have malaria,,auto-split from slash values
+FALSE,P315,feeling_sensing,Tádduan kus kuna kani bawì,Tudloan ta ka mahitungod niining tambal,Ituturo ko sa iyo ang pag-inom ng gamot na ito,I'll teach you how to take this medicine,,
+FALSE,P316,feeling_sensing,Indiksyunan kus kuna,Indyiksiyonan ta ka,Iiniksiyunan kita,I'll give you an injection,,
+FALSE,P317,feeling_sensing,Inám nu ni bawì ni kada malássáddé álló,Imnon nimo kining tambala kada udto,Inumin mo ang gamot na ito tuwing tanghali,Take this medicine every day at noon,,
+FALSE,P318,feeling_sensing,"Inám nu ni bawì ni kada sállám, malássáddé álló, asta mapun; makatállu sábbad álló","Imna ning tambala kada buntag, udto, ug hapon; makatulo sa usa ka adlaw","Inumin mo ang gamot na ito tuwing umaga, tanghali, at hapon; tatlong beses isang araw","Take this medicine every morning, noon and afternoon; three times a day",,
+FALSE,P319,feeling_sensing,ágballusán,gigutum,nagugutom,hungry,,
+FALSE,P320,feeling_sensing,ágkabalóyón,malipung,nahihilo,dizzy,,
+FALSE,P321,feeling_sensing,ágkabággatan,gibug-atan,nabibigatan,burdened,,
+FALSE,P322,feeling_sensing,ágkabállé,gikapoy,napapagod,tired,,auto-split from slash values
+FALSE,P323,feeling_sensing,ágkabállé,gikapoy,napapagod,fatigued,,auto-split from slash values
+FALSE,P324,feeling_sensing,ágkabingál,mabungol,nabibingi,deafening,,
+FALSE,P325,feeling_sensing,ágkagánnawan,gitugnaw,nilalamig,feeling chilly,,
+FALSE,P326,feeling_sensing,ágkagáttasan,gikutasan,hinihingal,out of breath,,auto-split from slash values
+FALSE,P327,feeling_sensing,ágkagáttasan,gihangak,hinihingal,out of breath,,auto-split from slash values
+FALSE,P328,feeling_sensing,ágkagirákkan,nagilokan,nakiliti,ticklish,,
+FALSE,P329,feeling_sensing,ágkatudugan,katulgon,inaantok,sleepy,,
+FALSE,P330,feeling_sensing,ágkáddukáddu,pitikpitik,pumipitik,throbbing,,
+FALSE,P331,feeling_sensing,ágkárkárrán,nagakurog,nanginginig,trembling with chills,,
+FALSE,P332,feeling_sensing,makkatál,katol,makati,itchy,,
+FALSE,P333,feeling_sensing,malómét,galuya,mahina,physically weak,,
+FALSE,P334,feeling_sensing,mangilu,ngilu,kinikilig,tingling sensation,,in teeth / spine; auto-split from slash values
+FALSE,P335,feeling_sensing,mangilu,ngilu,ngilo,tingling sensation,,in teeth / spine; auto-split from slash values
+FALSE,P336,feeling_sensing,mapáddì,hapdos,mahapdi,stinging,,
+FALSE,P337,feeling_sensing,masakit,sakit,masakit,painful,,
+FALSE,P338,feeling_sensing,ménit,giigangan,naiinitan,hot,,auto-split from slash values
+FALSE,P339,feeling_sensing,ágkénitan,giigangan,naiinitan,hot,,auto-split from slash values
+FALSE,P340,feeling_sensing,mitákkangan,giuhaw,nauuhaw,thirsty,,
+FALSE,P341,feeling_sensing,pakénótà,kasukahon,nasusuka,nauseated,,
+FALSE,P342,,Mga bógók,Mga Sakit,Mga Sakit,Sicknesses ,,
+FALSE,P343,,Mga bógók,Mga Sakit,Mga Sakit,Illnesses,,
+FALSE,P344,sicknesses_illnesses,abas,tipdas,tigdas,measles,,
+FALSE,P345,sicknesses_illnesses,amù,samad,sugat,wound,,
+FALSE,P346,sicknesses_illnesses,ágbuhaán,giubo,umuubo,coughing,,auto-split from slash values
+FALSE,P347,sicknesses_illnesses,ágbuhaán,giubo,umuubo,cough,,auto-split from slash values
+FALSE,P348,sicknesses_illnesses,ágkabuhián,gikabuhi,sinikmura,hyper-acidity,,manual check: slash values
+FALSE,P349,sicknesses_illnesses,ágkabuhián,gikabuhi,sinikmura, abdominal pain,,
+FALSE,P350,sicknesses_illnesses,ágkabuhián,gikabuhi,sinikmura,heartburn,,
+FALSE,P351,sicknesses_illnesses,ágkappuk,hubak,hika,asthma,,auto-split from slash values
+FALSE,P352,sicknesses_illnesses,yákyák,hubak,hika,asthma,,auto-split from slash values
+FALSE,P353,sicknesses_illnesses,ágkénit,kalintura,lagnat,feverish,,auto-split from slash values
+FALSE,P354,sicknesses_illnesses,ménit é lawa,kalintura,lagnat,fever,,auto-split from slash values
+FALSE,P355,sicknesses_illnesses,ágtabákkán,gasakit ang kutokuto,masakit ang sikmura,gastric pain,,auto-split from slash values
+FALSE,P356,sicknesses_illnesses,ágtabákkán,suul,masakit ang sikmura,extreme hunger pain,,auto-split from slash values
+FALSE,P357,sicknesses_illnesses,bitánnù,sip-on,sipon,nasal mucus ,,manual check: slash values
+FALSE,P358,sicknesses_illnesses,bitánnù,sip-on,sipon,runny nose,,
+FALSE,P359,sicknesses_illnesses,bóngô,bungog,luga,ear infection,,
+FALSE,P360,sicknesses_illnesses,buggis,bun-i,buni,ringworm,,tinea
+FALSE,P361,sicknesses_illnesses,busuwak,pangagud,alipunga,athlete's foot,,
+FALSE,P362,sicknesses_illnesses,giláb ka dipanug,tisis,tibi,tuberculosis,,auto-split from slash values
+FALSE,P363,sicknesses_illnesses,tibi,tibi,tibi,TB,,auto-split from slash values
+FALSE,P364,sicknesses_illnesses,gindás ka wayig,kalibanga,pagtatae,diarrhea,,
+FALSE,P365,sicknesses_illnesses,hay blad,hay blad,mataas ang dogo,high blood pressure,,auto-split from slash values
+FALSE,P366,sicknesses_illnesses,hay blad,high blood,high blood,high blood pressure,,auto-split from slash values
+FALSE,P367,sicknesses_illnesses,katál,kurikung,galis,scabies,,
+FALSE,P368,sicknesses_illnesses,lapa,paso,paso,burn,,
+FALSE,P369,sicknesses_illnesses,masakit é mga laluwadan,reyuma,reuma,rheumatism,,auto-split from slash values
+FALSE,P370,sicknesses_illnesses,masakit é mga laluwadan,panghuboy sa lutahan,reuma,arthritis,,auto-split from slash values
+FALSE,P371,sicknesses_illnesses,masakit é ngipán,sakit ang ngipon,masakit ang ngipin,toothache,,
+FALSE,P372,sicknesses_illnesses,masakit é ulu,labad ang ulo,sakit ng ulo,headache,,
+FALSE,P373,sicknesses_illnesses,pamánnus,bugas,bugas,acne,,auto-split from slash values
+FALSE,P374,sicknesses_illnesses,pamánnus,bugas,tagihawat,pimples,,auto-split from slash values
+FALSE,P375,sicknesses_illnesses,pamutì,ap-ap,an-an,tinea versicolor,,fungus skin disease
+FALSE,P376,sicknesses_illnesses,pigsa,hubag,pigsa,a boil,,auto-split from slash values
+FALSE,P377,sicknesses_illnesses,bakukang,bakukang,pigsa,skin ulcer,,auto-split from slash values
+FALSE,P378,sicknesses_illnesses,rarù,nuka,sugat,sore,,
+FALSE,P379,sicknesses_illnesses,téték,sanla,ketong,leprosy,,
+FALSE,P380,sicknesses_illnesses,ugahip,ugahip,ugahip,impetigo,,
+FALSE,P381,,Tô lawa ka manubù,Parti sa lawas,Bahagi ng katawan,The body,,
+FALSE,P382,body,abul,tuhod,tuhod,knee,,
+FALSE,P383,body,alig,liog,leeg,neck,,
+FALSE,P384,body,até,atay,atay,liver,,
+FALSE,P385,body,awak,hawak,baywang,waist,,
+FALSE,P386,body,ákkud,unod,laman,flesh,,
+FALSE,P387,body,babbà,baba,bibig,mouth,,
+FALSE,P388,body,bagà,baga,baga,lungs,,
+FALSE,P389,body,bahà,suwang,baba,chin,,
+FALSE,P390,body,bakaráng,tutunlan,lalamunan,throat,,
+FALSE,P391,body,barasu,braso,braso,upper arm,,
+FALSE,P392,body,bállad,bukton,braso,arm,,auto-split from slash values
+FALSE,P393,body,bállad,kamut,kamay,hand,,auto-split from slash values
+FALSE,P394,body,báttuk,nawong,mukha,face,,
+FALSE,P395,body,bibig,wait,labi,lips,,
+FALSE,P396,body,bókkóg,likud,likod,back,,
+FALSE,P397,body,bubun,paa,hita,thigh,,
+FALSE,P398,body,bukád,agtang,noo,forehead,,
+FALSE,P399,body,dilà,dila,dila,tongue,,
+FALSE,P400,body,dipanug,dugo,dugo,blood,,
+FALSE,P401,body,gátták,tiyan,tiyan,abdomen,,
+FALSE,P402,body,gusuk,gusok,tadyang,rib,,
+FALSE,P403,body,idung,ilong,ilong,nose,,
+FALSE,P404,body,ità,bugan,singit,groin,,
+FALSE,P405,body,kagpa,dughan,dibdib,chest,,
+FALSE,P406,body,káddár,lukunlukun,alakala kan,back of the knee,,auto-split from slash values
+FALSE,P407,body,káddál,lukunlukun,alakala kan,back of the knee,,auto-split from slash values
+FALSE,P408,body,kindal,panit,balat,skin,,
+FALSE,P409,body,kiré,kilay,kilay,eyebrows,,
+FALSE,P410,body,kumáng,kumo,kamao,fist,,
+FALSE,P411,body,lawa,lawas,katawan,body,,
+FALSE,P412,body,mata,mata,mata,eye,,
+FALSE,P413,body,ngipán,ngipon,ngipin,teeth,,
+FALSE,P414,body,ngumál,lagus,gilagid,gums,,
+FALSE,P415,body,paa,tiil,paa,feet,,
+FALSE,P416,body,palu,tikud,sakong,heel,,
+FALSE,P417,body,palad,palad,palad,palm of hand,,
+FALSE,P418,body,palad ta paa,lapalapa,talampakan,sole of the foot,,
+FALSE,P419,body,pangintubungan,abaga,balikat,shoulder,,
+FALSE,P420,body,pállà,iluk,kilikili,armpit,,
+FALSE,P421,body,pirákpirák,pilok,pilik mata,eyelashes,,auto-split from slash values
+FALSE,P422,body,pilákpilák,pilok,pilik mata,eyelashes,,auto-split from slash values
+FALSE,P423,body,puruwé,alimpulu,bumbunan,crown of head,,
+FALSE,P424,body,pusád,pusod,pusod,navel,,
+FALSE,P425,body,pusángngi,aping,pisngi,cheek,,
+FALSE,P426,body,pusù,batiis,binti,calf of leg,,
+FALSE,P427,body,pusung,kasingkasing,puso,heart,,
+FALSE,P428,body,saklà,alingagngag,tilatilaukan,uvula,,
+FALSE,P429,body,sáppián,bat-ang,balakang,hips,,
+FALSE,P430,body,siku,siko,siko,elbow,,
+FALSE,P431,body,simud,simud,labi,upper lip,,
+FALSE,P432,body,sulu,koko,kuko,fingernail,,auto-split from slash values
+FALSE,P433,body,sulu,koko,kuko,toenail,,auto-split from slash values
+FALSE,P434,body,susu,totoy,susu,breast,,
+FALSE,P435,body,taklayan,pangunahan'g bukton,braso,forearm,,
+FALSE,P436,body,talimbakalán,kumagko,hinlalaki,thumb,,
+FALSE,P437,body,talinga,dalunggan,tainga,ear,,
+FALSE,P438,body,tángngál,tangkugo,batuk,back of the neck,,
+FALSE,P439,body,tintudù,tudlo,daliri,finger,,
+FALSE,P440,body,tintuduk paa,tudlo sa tiil,daliri ng paa,toe,,
+FALSE,P441,body,tullan,bukog,buto,bone,,
+FALSE,P442,body,tuwétuwé,tuwaytuway,bayugù ng tuhud,kneecap,,
+FALSE,P443,body,ugat,ugat,ugat,vein ,,"general body structure; also refers to artery, muscle, nerve"
+FALSE,P444,body,ulu,ulo,ulo,head,,
+FALSE,P445,body,ulu,buhok,buhok,hair,,auto-split from slash values
+FALSE,P446,body,silag kólu,buhok,buhok,strand of hair,,auto-split from slash values
+FALSE,P447,body,uttó,kalimutaw,balintataw,pupil of eye,,
+FALSE,P448,,Gistudyu katô kinagiyan,Pagtoon sa pinulungan,Pag-aaral ng wika,Language learning,,
+FALSE,P449,language_learning,Katig kag kagi ka Tinagalog?,Kahibalo ka ba magsulti ug Tagalog?,Marunong ka bang magsalita ng Tagalog?,Can you speak Tagalog?,,
+FALSE,P450,language_learning,Katig kag kagi ka Binisayà?,Kahibalo ka ba magsulti ug Bisaya?,Marunong ka bang magsalita ng Bisaya?,Can you speak Visayan?,,
+FALSE,P451,language_learning,Délák dád ég kagpáttan ku,Gamay lang ang akong masabtan,Kaunti lang ang naiintindihan ko,I can only understand a little,,
+FALSE,P452,language_learning,Pakakagiyad délák,Makasulti na ko ug gamay,Nakapagsasalita ako ng kaunti,I can speak it a little,,
+FALSE,P453,language_learning,Kalyag ku kumatigga katô kinagiyan yu,Gusto kong makahibalo sa inyong pinulungan,Nais kung matuto ng inyong salita,I would like to learn your language,,plural
+FALSE,P454,language_learning,Makatáddù ka kanak katô kinagiyan yu?,Makatudlo ka ba sa akoa sa inyong pinulungan?,Maari bang turuan mo ako ng inyong salita?,Can you teach me your language?,,plural
+FALSE,P455,language_learning,"Tut kinagiyan yu, mánnun nu ka kakagi kani ",Unsaon nimo pagsulti niini sa inyong pinulungan,Sa inyong salita paano mo sasabihin ang ,In your language how do you say ,,plural
+FALSE,P456,language_learning,"Tut kinagiyan yu, ándinné ngadan kani?",Unsay ngalan niini sa inyong pinulungan?,Anong tawag nito sa inyong salita?,In your language what is the name for this?,,plural
+FALSE,P457,language_learning,Ándinné kóbadan kanan?,Unsay kahulugan niini?,Anong ibig sabihin nito?,What does that mean?,,
+FALSE,P458,language_learning,Ikagpát ka katô igkagi ku?,Nakasabot ka ba sa akong gisulti?,Naintindihan mo ba ang sinabi ko?,Did you understand what I am saying?,,
+FALSE,P459,language_learning,Ándà a ikagpát,Wala ko makasabot,Hindi ko po naintindihan,I did not understand,,
+FALSE,P460,language_learning,Diya pakagpát,Di ko kasabot,Hindi ko maunawaan,I do not understand,,
+FALSE,P461,language_learning,"Ka mému dád, uman nu yan","Kung mahimu, usba na","Kung maaari, pakiulit nga yon","If you would, please repeat that",,
+FALSE,P462,language_learning,Lagénut nu dád kag kagi ka,Hinayhinay lang pagsulti,Magsalita ka ng dahandahan,Speak more slowly,,
+FALSE,P463,language_learning,Katig kad ágkagi ka Ininglis,Kahibalo ka na mosulti ug Iningles,Marunong ka ng magsalita ng Ingles,You know how to speak English,,
+FALSE,P464,language_learning,Dì madigár tô kakagi ku,Dili maayo ang akong pagsulti,Hindi maayos ang aking pagsasalita,My speaking is not correct,,
+FALSE,P465,language_learning,Gistudyuwa pô gó ka mánnun ka kakagi ka Tagabawà,Nagtoon pa ko'g unsaon pagsulti ug Tagabawa,Nag-aaral pa lamang akong magsalita ng Tagabawa,I am still learning how to speak Tagabawa,,
+FALSE,P466,language_learning,Pakakagiyad sagpu ka Tagabawà,Makasulti nakog gamay'ng Tagabawa,Nakapagsasalita na ako ng kaunting Tagabawa,I know how to speak a little Tagabawa,,
+FALSE,P467,language_learning,Tóngkô a ka kinagiyak Tagabawà,Istoryahi ko ug pinulungang Tagabawa,Kausapin mo ako ng wikang Tagabawa,Speak with me in the Tagabawa language,,
+FALSE,P468,language_learning,Ágkadigárranna kumatig ka kinagiyak Tagabawà,Gusto ko makahibalo sa pinulungang Tagabawa,Gusto kung matuto ng wikang Tagabawa,I want to learn the Tagabawa language,,
+FALSE,P469,language_learning,Nángngawù?,Insakto ba?,Tama ba?,Is that correct?,,
+FALSE,P470,,Kasulat,Pagsulat,Pangliham,Writing,,
+FALSE,P471,,Kabaták,Pagsulat,Pangliham,Writing,,
+FALSE,P472,writing,Mállássa ka bólpin nu dógó dád?,Mohulam ko sa imong bolpen kadali lang?,Pahiram nga po ng bolpen mo sandali?,May I borrow your pen for a minute?,,
+FALSE,P473,writing,Papidda ka sulat tut innà ku,Magpadala ko ug sulat sa akong inahan,Magpapadala ako ng sulat sa nanay ko,I'll send a letter to my mother,,
+FALSE,P474,writing,"Ágkailanganna ka papil, silyu asta subri","Kinahanglan ko'g papel, selyo ug sobre","Kailangan ko ang papel, selyo, at sobre","I need paper, stamps, and an envelope",,
+FALSE,P475,writing,Pérma ka kannun.,Magpirma ka diri,Lagdaan mo dito,Sign your name here,,auto-split from slash values
+FALSE,P476,writing,Baták nu tô ngadan nu kannun,Magpirma ka diri,Lagdaan mo dito,Sign your name here,,auto-split from slash values
+FALSE,P477,writing,Pid nu ni sulat ni tut munisipyu,Dad-a ning sulat didto sa munisipyo,Dalhin mo ang sulat na ito sa tanggapan ng koreo,Take this letter to the post office,,
+FALSE,P478,writing,Málliya ka duwa abuk silyu tagkinsi asta sábbaddé tagsaysinta,Mopalit ko ug duha kabook selyo nga tagkinse ug usa kabook tag saysenta,Pagbilhan mo ako ng dalawang selyong tig-kikinse at isang selyong tig-sisisenta,Sell me two 15-centavo stamps and one 60-centavo stamp,,
+FALSE,P479,writing,Ánda ké makapapid ka tiligrama?,Asa kami makapadala ug telegrama?,Saan kami maaaring magpadala ng telegrama?,Where can we send a telegram?,,
+FALSE,P480,,Góméng asta ágkan,Naglung-ag ug nagkaon,Paglulutò at kumain,Cooking and eating,,
+FALSE,P481,cooking_eating,Ándin yan áglumun nu?,Unsa ang imong gibuhat?,Anong ginagawa mo?,What are you doing?,,
+FALSE,P482,cooking_eating,Góméngnga ka pamahaw dé,Naglung-ag ko sa among pamahaw,Nagluluto ako ng aming almusal,I'm cooking our breakfast,,exc
+FALSE,P483,cooking_eating,Ándin tóg lutuán nu?,Unsa ang imong gilung-ag?,Anong niluluto mo?,What are you cooking?,,
+FALSE,P484,cooking_eating,Áglutù a dád man ka pariyà ágbaláttan ka tállug,Nagluto na lang ko ug paliya gisagulan ug itlog,Nagluluto lang ako ng ampalaya na may itlog,I'm just cooking ampalaya with eggs,,
+FALSE,P485,cooking_eating,Ágkadigárran ka kuman ka gulay badak?,Gusto ka bang mokaon ug gulay nga nangka?,Gusto mo bang kumain ng gulay na langka?,Do you like to eat jackfruit as a cooked vegetable?,,
+FALSE,P486,cooking_eating,"Óó, ágkadigárranna. Manan? Duwán badak yu?","Oo, gusto kong mokaon. Ngano? Naa moy nangka?","Oo, gusto kung kumain. Bakit? May langka ba kayo?","Yes, I like to eat it. Why? Do you have jackfruit?",,plural
+FALSE,P487,cooking_eating,"Óó, duwán marapung matássan tut pabungan dé","Oo, naay daghang gulang sa among bukid","Oo, marami ng magulang sa aming bukid","Yes, there are many mature ones in our field",,
+FALSE,P488,cooking_eating,"Atin malyag ka, mangé ki kani tagadtagad","Kon gusto nimo, mokuha ta unyang taudtaud","Kung gusto mo, kukuha tayo mayamaya","If you would like, we can get some after awhile",,
+FALSE,P489,cooking_eating,"Óó, kani ka pángnga kég pamahaw","Oo, unya ug human mi mamahaw","Oo, mamaya pagkatapos naming mag-almusal","Yes, later after we finish breakfast",,
+FALSE,P490,cooking_eating,Madiyù tô pabungan yu?,Layo ba ang inyong bukid?,Malayo ba ang bukid ninyo?,Is it far to your field?,,plural
+FALSE,P491,cooking_eating,"Dì madiyù. Madani dád, ándà dunggù ka sábbad kilumitru","Dili layo. Duol lang, wala moabot ug usa ka kilometro","Hindi malayo. Malapit lang, wala pang isang kilometro","It's not far. It's just nearby, not even one kilometer",,
+FALSE,P492,cooking_eating,"Na, panó kid?","Unya, molakaw na ta?","O, aalis na ba tayo?","Then, shall we go?",,
+FALSE,P493,cooking_eating,"Óó, panó kid su ébô sékót ki pakólì, su duwán pa sadunan ta","Oo, molakaw na ta aron dali ta makabalik, kay naa pa tay adtoan","Oo, alis na tayo para makabalik tayo agad, dahil may lalakarin pa tayo","Yes, let's go so we can return soon, because we still have somewhere else to go",,
+FALSE,P494,cooking_eating,Ágballusánna asta ágkatákkanganna,Gigutom ko ug giuhaw,Nagugutom ako at nauuhaw,I am hungry and thirsty,,
+FALSE,P495,cooking_eating,Ágkan kak sáddà?,Mokaon kag isda?,Kumakain ka ba ng isda?,Do you eat fish?,,
+FALSE,P496,cooking_eating,"Óó, ágkanna","Oo, mokaon ko","Oo, kumakain ako","Yes, I eat it",,
+FALSE,P497,cooking_eating,Tignà nud tô kardiru,Itak-ang na ang kaldero,Isalang mo na ang kaldero,Put the pot on the fire,,
+FALSE,P498,cooking_eating,Ginám kô ka kapi?,Moinom kamo ug kape?,Iinom kayo ng kape?,Do you drink coffee?,,plural
+FALSE,P499,cooking_eating,Ándinné inámmán nu?,Unsa imong imnon?,Anong iinumin mo?,What will you drink?,,
+FALSE,P500,cooking_eating,Agad ándin,Bisag unsa,Kahit ano,Whatever there is,,
+FALSE,P501,cooking_eating,Minám ki pak ménit,Mainom sa ta ug init,Uminom muna tayo ng mainit,We will all have hot drinks,,
+FALSE,P502,cooking_eating,Minitta pa,Moinit sa ko,Mag-iinit muna ako,I'll make hot drinks first,,
+FALSE,P503,cooking_eating,"Óó, mangatta pô","Oo, mohulat sa ko","Oo, maghintay lang ako","Yes, I'll just wait",,
+FALSE,P504,cooking_eating,Ágkadigárranna minám ka kapi,Gusto ko moinom ug kape,Gusto kung uminom ng kape,I like to drink coffee,,
+FALSE,P505,cooking_eating,"Agad sakán pagsik ágkébágganna, sunnud dán gó ka magánnówé timpu","Bisag ako gusto pod nako, labi na kong tingtugnaw","Kahit ako gustong-gusto ko, lalo na pagmalamig ang panahon","I too like it very much, especially during cold weather",,
+FALSE,P506,cooking_eating,"Magunawa ki kannê. Sakán agad ménit, ginámma. Kag tudugánna, ginámman ku ka kapi, ágkéwà puman tô tudug ku","Pareho diay ta. Ako maskig init, moinom ko. Kon katulgon ko, imnan nako'g kape, makuha man pod ang akong katulgon","Magkatulad pala tayo. Ako kahit mainit, umiinom rin. Kung inaantok ako umiinom ako ng kape, para maaalis ang antok ko","We are a lot alike. With me, even when it's hot, I can drink it. If I'm sleepy, I drink coffee to wake myself up",,
+FALSE,P507,cooking_eating,Kuman kid,Mokaon na ta,Kumain na tayo,We will eat now,,
+FALSE,P508,cooking_eating,"Kan kó madigár, yakóg kayyaan","Kaon mo ug maayo, ayaw mo ug kaulaw","Kumain kayong mabuti, huwag kayong mahihiya","Eat heartily, do not be bashful",,plural
+FALSE,P509,cooking_eating,Ágnanam tuu tô iglutù,Lami kaayo ang giluto,Napakasarap ang pagkaing iyon,That meal was very delicious,,
+FALSE,P510,cooking_eating,Ágnanam!,Lami!,Masarap!,It's delicious!,,
+FALSE,P511,cooking_eating,Katig ka góméng,Maayo ka moluto,Mahusay ka talagang magluto,You really know how to cook,,
+FALSE,P512,cooking_eating,Uman kó pa,Usab pa mo,Kumuha pa kayo,Have some more,,You pl
+FALSE,P513,cooking_eating,"Diyad, ibássuggad","Di na ko, busog na ko","Ayaw ko na, busog na ako",No thank you. I'm full,,auto-split from slash values
+FALSE,P514,cooking_eating,"Diyad, ibássuggad","Di na ko, busog na ko","Ayaw ko na, busog na ako",I'm satisfied,,auto-split from slash values
+FALSE,P515,cooking_eating,Pabur dád bággéyiya ka wayig,Pabor lang tagai ko ug tubig,Pahingi nga po ng inumin,May I please have a drink of water,,
+FALSE,P516,,Mga Nanam,Mga Lasa,Mga Lasa,Tastes,,
+FALSE,P517,tastes,ágnanam,lami,masarap,delicious,,auto-split from slash values
+FALSE,P518,tastes,ágnanam,lami,masarap,tasty,,auto-split from slash values
+FALSE,P519,tastes,malas,halang,maanghang,piquant,,auto-split from slash values
+FALSE,P520,tastes,maras,halang,maanghang,hot,,auto-split from slash values
+FALSE,P521,tastes,malassám,aslum,maasim,sour,,
+FALSE,P522,tastes,malumismis,tamis tamis,manamisnamis,not too sweet,,
+FALSE,P523,tastes,mammis,tam-is,matamis,sweet,,
+FALSE,P524,tastes,mappait,pait,mapait,bitter,,
+FALSE,P525,tastes,marád,aplod,mapakla,tart,,auto-split from slash values
+FALSE,P526,tastes,masipállád,aplod,mapakla,tart,,auto-split from slash values
+FALSE,P527,tastes,masin,parat,maalat,salty,,
+FALSE,P528,tastes,matabbang,tab-ang,matabang,bland,,auto-split from slash values
+FALSE,P529,tastes,matabbang,tab-ang,matabang,tasteless,,auto-split from slash values
+FALSE,P530,,Mga gulay asta ágkakan,Mga gulayon ug kan-onon,Mga gulay at pagkain,Vegetables and staples,,
+FALSE,P531,vegetables_staples,ágkannán,kan-on,kanin,cooked rice,,
+FALSE,P532,vegetables_staples,ámmé,humay,palay,rice grain,,
+FALSE,P533,vegetables_staples,ángkág,gabi,gabi,kind of gabi,,auto-split from slash values
+FALSE,P534,vegetables_staples,ángkág,gabi,gabi,taro,,auto-split from slash values
+FALSE,P535,vegetables_staples,baisan,patani,patani,lima beans,,
+FALSE,P536,vegetables_staples,basal,kalabasa,kalabasa,yellow squash,,
+FALSE,P537,vegetables_staples,batad,mais,mais,corn,,
+FALSE,P538,vegetables_staples,bawang,ahos,bawang,garlic,,
+FALSE,P539,vegetables_staples,bággas,bugas,bigas,hulled rice,,
+FALSE,P540,vegetables_staples,dabung,dabong,labong,bamboo shoots,,
+FALSE,P541,vegetables_staples,gabi,bisul,gabi,taro,,
+FALSE,P542,vegetables_staples,giniling,bugas mais,bigas na mais,corn grits,,
+FALSE,P543,vegetables_staples,kalumatì,kamatis,kamatis,tomato,,
+FALSE,P544,vegetables_staples,kamóssi,kamansi,rimas,breadfruit,,
+FALSE,P545,vegetables_staples,karubang,karabansos,sigarilyas,wing beans,,
+FALSE,P546,vegetables_staples,kasilà,kamote,kamote,yam,,auto-split from slash values
+FALSE,P547,vegetables_staples,kasilà,kamote,kamote,camote,,auto-split from slash values
+FALSE,P548,vegetables_staples,kasilà kayu,kamoteng kahoy,kamoteng-kahoy,cassava,,
+FALSE,P549,vegetables_staples,katumbal,sili,sili,pepper,,
+FALSE,P550,vegetables_staples,kulat,ligbos,kabute,mushroom,,
+FALSE,P551,vegetables_staples,luya,luy-a,luya,ginger,,
+FALSE,P552,vegetables_staples,manì,mani,mani,peanut,,
+FALSE,P553,vegetables_staples,mitsili,mitsili,petsay,Chinese cabbage,,auto-split from slash values
+FALSE,P554,vegetables_staples,mitsili,pitsay,petsay,Chinese cabbage,,auto-split from slash values
+FALSE,P555,vegetables_staples,munggus,monggos,munggo,mung beans,,
+FALSE,P556,vegetables_staples,pamintu,atsal,siling pula,bell pepper,,
+FALSE,P557,vegetables_staples,pariyà,paliya,ampalaya,ampalaya,,
+FALSE,P558,vegetables_staples,pitsay,pitsay,petsay,pechay,,
+FALSE,P559,vegetables_staples,pusù ka saging,puso sa saging,puso ng saging,banana blossom,,
+FALSE,P560,vegetables_staples,ripulyu,ripolyo,repolyo,cabbage,,
+FALSE,P561,vegetables_staples,sibuyas,sibuyas,sibuyas,green onion,,auto-split from slash values
+FALSE,P562,vegetables_staples,bumbay,bumbay,sibuyas,onion,,auto-split from slash values
+FALSE,P563,vegetables_staples,sitaw,balatong,sitaw,long beans,,auto-split from slash values
+FALSE,P564,vegetables_staples,sitaw,batong,sitaw,long beans,,auto-split from slash values
+FALSE,P565,vegetables_staples,suwibin,soybin,soybin,soybeans,,
+FALSE,P566,vegetables_staples,tagótóng,talong,talong,eggplant,,
+FALSE,P567,vegetables_staples,tábbu,tubo,tubo,sugar cane,,
+FALSE,P568,vegetables_staples,ubi,ubi,ubi,purple yam,,
+FALSE,P569,vegetables_staples,ukra,okra,okra,okra,,
+FALSE,P570,vegetables_staples,upu,upo,upo,white squash,,
+FALSE,P571,,Mga prutas,Mga prutas,Mga prutas,Fruits,,
+FALSE,P572,fruits,aranghita,naranghita,dalanghita,orange,,
+FALSE,P573,fruits,badak,nangka,langka,jackfruit,,
+FALSE,P574,fruits,rambutan,rambutan,rambutan,rambutan,,auto-split from slash values
+FALSE,P575,fruits,barangas,rambutan,rambutan,rambutan,,auto-split from slash values
+FALSE,P576,fruits,bayabas,bayabas,bayabas,guava,,
+FALSE,P577,fruits,bukadu,abokado,abokado,avocado,,
+FALSE,P578,fruits,butung,butong,"buko, mura",young coconut,,
+FALSE,P579,fruits,duryan,duryan,durian,durian,,
+FALSE,P580,fruits,kakaw,kakaw,kakaw,cacao,,auto-split from slash values
+FALSE,P581,fruits,kakó,kakaw,kakaw,cacao,,auto-split from slash values
+FALSE,P582,fruits,kaymitu,kaymito,kaimito,star apple,,auto-split from slash values
+FALSE,P583,fruits,kaymitu,kaymito,kaymito,star apple,,auto-split from slash values
+FALSE,P584,fruits,kayubana,labana,guyabano,guavano,,auto-split from slash values
+FALSE,P585,fruits,kayubana,gwayabano,guyabano,soursop,,auto-split from slash values
+FALSE,P586,fruits,láppù,lubi,niyog,coconut,,
+FALSE,P587,fruits,limunsitu,limonsito,kalamansi,calamansi,,
+FALSE,P588,fruits,lukban,baongon,suha,pomelo,,auto-split from slash values
+FALSE,P589,fruits,ássám,baongon,suha,pomelo,,auto-split from slash values
+FALSE,P590,fruits,manggà,mangga,mangga,mango,,
+FALSE,P591,fruits,marang,marang,marang,marang,,
+FALSE,P592,fruits,saging,saging,saging,banana,,
+FALSE,P593,fruits,santul,santol,santol,santol,,
+FALSE,P594,fruits,tarum,kapayas,papaya,papaya,,
+FALSE,P595,fruits,tubuwa,lansones,lansones,lansones,,
+FALSE,P596,fruits,tunyab,pinya,pinya,pineapple,,
+FALSE,P597,,Karni,Karne,Karne,meat,,
+FALSE,P598,meat,karni kasu,karne sa iro,karning aso,dogmeat,,
+FALSE,P599,meat,karnik babuy,karne sa baboy,karning baboy,pork,,
+FALSE,P600,meat,karnik babuy ta mabánnás,karne sa baboy ihalas,karning baboy damo,wild pig,,meat
+FALSE,P601,meat,karnik baka,karne sa baka,karning baka,beef,,
+FALSE,P602,meat,karnik kambing,karne sa kanding,karning kambing,goat,,
+FALSE,P603,meat,karnik karabó,karne sa kalabaw,karning kalabaw,carabeef,,auto-split from slash values
+FALSE,P604,meat,karnik karabó,kabaw,karning kalabaw,carabeef,,auto-split from slash values
+FALSE,P605,meat,karnik karnéru,karne sa karnero,karning tupa,lamb,,auto-split from slash values
+FALSE,P606,meat,bilibili,karne sa karnero,karning tupa,lamb,,auto-split from slash values
+FALSE,P607,meat,karnik manuk,karne sa manok,karning manok,chicken,,
+FALSE,P608,meat,karni kósa,karne sa binaw,karning usa,venison,,auto-split from slash values
+FALSE,P609,meat,karnik saladáng,karne sa binaw,karning usa,venison,,auto-split from slash values
+FALSE,P610,meat,karnik patu,karne sa pato,karning pato,duck,,
+FALSE,P611,,Ginámmán ,Imnonon,Inumin,Beverages,,
+FALSE,P612,beverages,gatas,gatas,gatas,milk,,
+FALSE,P613,beverages,kapi,kape,kape,coffee,,
+FALSE,P614,beverages,kuk,kok,kok,Coca-Cola,,auto-split from slash values
+FALSE,P615,beverages,kukakula,kokakola,Coca-Cola,Coca-Cola,,auto-split from slash values
+FALSE,P616,beverages,luya,luy-a,luya,ginger,,
+FALSE,P617,beverages,sakulati,sikwate,sikulate,chocolate,,
+FALSE,P618,beverages,suwibin,soybin,soybin,soybean coffee,,
+FALSE,P619,beverages,támmák ka prutas,dugà,katas ng prutas,fruit juice,,
+FALSE,P620,beverages,tsa,tsa,tsa,tea,,
+FALSE,P621,beverages,wayig,tubig,tubig,water,,
+FALSE,P622,,Mga Ngadág,Mga Baho,Mga Amoy,Smells,,
+FALSE,P623,smells,madat é ngadág,lain ug baho,masangsang,body odor,,of humans and animals
+FALSE,P624,smells,makábbó,antud,amoy sunog na pagkain,smell of burned food,,
+FALSE,P625,smells,malangig,langsa,malangsa,fishy smell,,auto-split from slash values
+FALSE,P626,smells,malangig,langsa,malangsa,smell of blood,,auto-split from slash values
+FALSE,P627,smells,malansi / maransi,antud,amoy sunog / balahibo / bohok,smell of burned hair / feathers,,manual check: slash values
+FALSE,P628,,,,,,,
+FALSE,P629,smells,mammut,humut,mabango,fragrant,,
+FALSE,P630,smells,mawù,baho,mabaho,foul smell,,
+FALSE,P631,,Ágbálli asta ághangyù,Pagpalit ug paghangyo ,Pagbili at pagtawad,Buying and bargaining,,
+FALSE,P632,buying_bargaining,Tagpirayé iyarda,Tagpila ang yarda,Magkano ang yarda,How much is a yard,,auto-split from slash values
+FALSE,P633,buying_bargaining,mitru kani tila ni?,mitro niining tela ha?,metro ng telang ito?,meter of this cloth?,,auto-split from slash values
+FALSE,P634,buying_bargaining,Mahal sunnud! Mému mangyù?,Mahal kaayo! Puyde ba makahanyo?,Ang mahal naman! Maaari bang tumawad?,It's too expensive! Can you give me a discount?,,auto-split from slash values
+FALSE,P635,buying_bargaining,Duwán pa hangyù?,Naa pa bay hangyo?,May tawad pa ba?,Is there a discount?,,auto-split from slash values
+FALSE,P636,buying_bargaining,Sunnud dán baratu ni,Barato na kaayo ni,Napakamura na ito,It's quite inexpensive as it is,,
+FALSE,P637,buying_bargaining,Pirayé kalyag nu?,Pila ang imong gusto?,Magkano ang gusto mo?,How much would you like to pay for it?,,
+FALSE,P638,buying_bargaining,Dugangi nu dád délák,Dugangi na lang ug gamay,Dagdagan mo naman ng kaunti,Offer a little more,,
+FALSE,P639,buying_bargaining,Bággén nu ka lima pisus?,Ihatag ba nimo ug singko pisos?,Ibibigay mo ba ng limang piso?,Can you give it to me for P5.00?,,
+FALSE,P640,buying_bargaining,Óó. Pira iyardayé kalyag nu?,Sigi. Pila ka yarda ang imong kuhaon?,Sige. Ilang yarda ang kukunin mo?,Ok. How many yards do you want?,,
+FALSE,P641,buying_bargaining,"Mam, malyag ka málli ka bukug?","Mam, gusto ka ba mopalit ug basket?","Ale, gusto mo bang bumili ng basket?","Ma'am, would you like to buy a basket?",,
+FALSE,P642,buying_bargaining,Sadanné gimu kanan?,Kinsa ang naghimo niana?,Sino ang gumawa niyan?,Who made it?,,
+FALSE,P643,buying_bargaining,Sakánné gimu,Akoy naghimo,Ako po ang gumawa,I made it myself,,
+FALSE,P644,buying_bargaining,Igbállad dád ni,Gikinamot lang ni,Gawa po ito sa kamay,It's handmade,,auto-split from slash values
+FALSE,P645,buying_bargaining,Igimu ni ka bállad,Gikinamot lang ni,Gawa po ito sa kamay,It's handmade,,auto-split from slash values
+FALSE,P646,buying_bargaining,Igpamánnu nu na ikakatig ka gimu ka bukug?,Giunsa nimo pagkahibalo sa paghimo ug basket?,Paano kang natutong gumawa ng basket?,How did you learn to make baskets?,,
+FALSE,P647,buying_bargaining,Igtádduanna katô innà ku,Gitudloan ko sa akong inahan,Tinuruan po ako ng nanay ko,I was taught by my mother,,
+FALSE,P648,,Ágkarga asta ágsaké,Pagkarga ug pagsakay,Pagkakarga at pagsakay,Cargo and transportation,,
+FALSE,P649,cargo_transportation,"Tiyù, sakán dánné mid","Nong, ako nay modala","Mama, ako na po ang magdadala","Sir, I'll carry it",,
+FALSE,P650,cargo_transportation,"Tógón din, duwán dán mid","Sagdi lang, naa nay modala","Huwag na, may nagdadala na","Never mind, someone is carrying it already",,
+FALSE,P651,cargo_transportation,"Tagù nu yan sábbad, sakán dánné mid","Ibilin ang usa, ako nay modala",Iwan mo na yan at ako na ang magdadala,Leave that one; I'll carry it,,
+FALSE,P652,cargo_transportation,Pira manné pamuyuán nu kani langun?,Pilay kobra nimo niining tanan?,Magkano ang sisingilin mo sa lahat ng ito?,How much will you charge for all this?,,
+FALSE,P653,cargo_transportation,Mahal sunnud! Bággéyan ta dád ka sapulù pisus,Mahal man kaayo! Tagaan ta lang ug dyis pisos,Ang mahal naman! Sampung piso na lang,It's too much! I'll give you only ten pesos,,
+FALSE,P654,cargo_transportation,Madun ka tut Davao?,Moadto ka ba sa Davao?,Pupunta ka ba sa Davao?,Are you going to Davao City?,,
+FALSE,P655,cargo_transportation,"Óó, ándinné sakayan ku madun diyan?","Oo, unsa ang akong sakyan moadto didto?","Oo, ano ang aking sasakyan papunta roon?","Yes, what do I ride to get there?",,
+FALSE,P656,cargo_transportation,Saké ka kanan bus,Sakay anang bus,Sumakay ka sa bus na iyan,Ride that bus,,
+FALSE,P657,cargo_transportation,Tákkás ka kanak,Uban sa ako,Samahan mo ako,Come with me,,
+FALSE,P658,cargo_transportation,Talundug ka kanak,Sunod nako,Sumunod ka sa akin,Follow me,,
+FALSE,P659,cargo_transportation,Ándayég sakayanan katô ágsadun tut Kidapawan?,Asa ang sakyanan padulong sa Kidapawan?,Saan ang sakayan patungo sa Kidapawan?,Where is the place to board for Kidapawan?,,
+FALSE,P660,cargo_transportation,"Diyan táppad, asal madigár pa ka sumaké kak pidikab","Didto dapit, pero maayo pa mosakay ka ug pedikab","Sa dako roon, pero mabuti pa ay sumakay ka ng traysikel","Over there, but it's better for you to ride a pedicab",,
+FALSE,P661,cargo_transportation,Ándinné kadugayi katô biyahi ágsadun tut Cotabato?,Unsa kadugayon sa biyahi padulong sa Cotabato?,Gaano katagal ang biyahe papuntang Cotabato?,How long is the trip to Cotabato City?,,
+FALSE,P662,cargo_transportation,Duwán mga tállu uras,Mga tulo ka oras,Mga tatlong oras,About three hours,,
+FALSE,P663,cargo_transportation,"Ándin, tumánnó ki?","Unsa, magbalon ba ta?",Magbabaon ba tayo?,Shall we take something to eat on the way?,,
+FALSE,P664,cargo_transportation,Ándayé pónógan nu?,Asa ka manaog?,Saan ka bababa?,Where will you get off?,,
+FALSE,P665,cargo_transportation,Mákkás ka tiyù,"Mouban ka ba, tiyo","Sasama ka ba, t'yong","Are you coming, uncle",,auto-split from slash values
+FALSE,P666,cargo_transportation,tiyà?,tiya?,t'yang?,auntie?,,auto-split from slash values
+FALSE,P667,cargo_transportation,Saké kad. Taguán kud tô piniddan nu tun datas kani dyip,Sakay na. Ibutang na nako ang karga nimo sa taplod sa dyip,Sakay na. Ilalagay ko na ang iyong kargada sa ibabaw ng dyip,Get on. I'll just put your cargo on top of the jeep,,
+FALSE,P668,cargo_transportation,Pirayé pliti asta ni piniddan ku?,Pila ang akong pasahi ug sa akong karga?,Magkano ang aking pasahe pati na kargada?,How much is the fare for me and my cargo?,,
+FALSE,P669,cargo_transportation,Mónógga tut palingki,Manaog ko sa palengke,Bababa ako sa palengke,I'll get off at the market,,
+FALSE,P670,cargo_transportation,Diritsu ka,Pagdiritso,Dumiretso ka,Go straight ahead,,
+FALSE,P671,cargo_transportation,Pakawanan tut duwán ágsuwéyan,Patoo sa naay eskina,Pakanan tayo sa kanto,Turn right at the corner,,auto-split from slash values
+FALSE,P672,cargo_transportation,Pakawanan tut duwán ágsuwéyan,kanto,Pakanan tayo sa kanto,Turn right at the corner,,auto-split from slash values
+FALSE,P673,cargo_transportation,Pébang tut dadan dutun ta tulay,Pawala sa unahan sa tulay,Pakaliwa tayo pagkalampas ng tulay,Turn left after the bridge,,
+FALSE,P674,cargo_transportation,Sumódô tut duwán ágsuwéyan,Hunong sa eskina,Huminto ka sa kanto,Stop at the corner,,auto-split from slash values
+FALSE,P675,cargo_transportation,Sumódô tut duwán ágsuwéyan,kanto,Huminto ka sa kanto,Stop at the corner,,auto-split from slash values
+FALSE,P676,cargo_transportation,Kannunnad mónóg,Manaog na ako dinhi,Bababa na ako rito,I'll get off here,,
+FALSE,P677,,Ni timpu ta,Ang panahon,Kalagayan ng panahon,The seasons,,
+FALSE,P678,seasons,Madigár su ándà dán udan,Maayo kay wala na moulan,Mabuti at hindi na umuulan,It's good because it's no longer raining,,
+FALSE,P679,seasons,Ménit sunnud su ágsánnang dán ni,Init kaayo kay ting-init naman karon,Napakainit dahil tag-init na ngayon,It's very hot because it's dry season,,
+FALSE,P680,seasons,Magánnó,Tugnaw,Maginaw,It's cold,,
+FALSE,P681,seasons,Ágkaramag sunnud su duwán bagyu tut Bicol,Gahangin kaayo kay naay bagyo sa Bicol,Napakahangin dahil may bagyo sa Bicol,It's very windy because there is a typhoon in Bicol,,
+FALSE,P682,seasons,Libutaánné dalan su gudan dán,Lapok ang dalan kay ting-ulan na,Maputik ang daan dahil tag-ulan,The road is muddy because it's rainy season,,
+FALSE,P683,seasons,Mabákkár tuu tô udan bani,Kusog kaayo ang ulan gahapon,Umulan ng napakalakas kahapon,It rained very hard yesterday,,
+FALSE,P684,seasons,Mikannówa katô kilat dukilám,Nakamata ko sa dalogdog gabii,Ginising ako ng kulog kagabi,The thunder woke me up last night,,
+FALSE,P685,seasons,Ménit dini asal magánnó tut pabungan,Init diri pero tugnaw sa bukid,Mainit dito pero malamig sa bundok,It's hot here but it's cold in the mountains,,
+FALSE,P686,,Mga insà,Mga pangutana,Mga tanong,Questions,,
+FALSE,P687,questions,Ándin ni?,Unsa ni?,Ano ito?,What is this?,,
+FALSE,P688,questions,Ándin yan?,Unsa na?,Ano iyan?,What is that?,,near; auto-split from slash values
+FALSE,P689,questions,Ándin tô?,Unsa to?,Ano yun?,What is that?,,far; auto-split from slash values
+FALSE,P690,questions,Ándin tô dadan diyan?,Unsa nang dapit didto?,Anô ba yong naroon?,What is that over there?,,
+FALSE,P691,questions,Kadángngan?,Kanus-a?,Kailan?,When?,,
+FALSE,P692,questions,Sadan?,Kinsa?,Sino?,Who?,,
+FALSE,P693,questions,Sadan?,Kang kinsa?,Kanino?,Whose?,,
+FALSE,P694,questions,Ánda?,Asa?,Saan?,Where?,,
+FALSE,P695,questions,Manan?,Ngano?,Bakit?,Why?,,
+FALSE,P696,questions,Pamánnun?,Unsaon?,Paano?,How?,,
+FALSE,P697,questions,Manan ka dì?,Nganong dili?,Bakit hindi?,Why not?,,
+FALSE,P698,questions,Ándayé kabálliyan ku ka newspaper?,Asa ko makapalit ug pamantalaan?,Saan ako puedeng bumili ng dyaryo?,Where can I buy a newspaper?,,
+FALSE,P699,questions,Ánda táppaddé ágpapiyaan ka rilu?,Asa dapit magpaayo'g rilo?,Saan maaaring magpaayos ng relo?,Where is the watch repair shop?,,
+FALSE,P700,questions,Ándayé duwán dintista?,Asa ang naay dentista?,Saan mayroon dentista?,Where is a dentist?,,
+FALSE,P701,questions,Ándayé ágkangayan ka tikit ka iruplanu?,Asa mukoha ug tiket sa iroplano?,Saan makabibili ng tiket ng eroplano?,Where are airplane tickets sold?,,
+FALSE,P702,questions,Ánda tô dalan ágsadun tut palingki?,Asa ang dalan paingon sa palengke?,Saan ang daang papuntang palengke?,Which is the way to the market?,,
+FALSE,P703,questions,Ándayé madigár ágkannanan,Asa ang maayong kan-anan,Saan ang magandang kainan,Where is a good place to eat,,auto-split from slash values
+FALSE,P704,questions,restawran?,restawran?,restauran?,restaurant?,,auto-split from slash values
+FALSE,P705,questions,Madiyù pa ka Davao?,Mas layo pa ba sa Davao?,Mas malayo pa ba sa Davao?,Is it still far to Davao City?,,
+FALSE,P706,questions,Ánda tô kasilyas?,Asa ang kasilyas?,Nasaan ang kasilyas,Where is the comfort room?,,auto-split from slash values
+FALSE,P707,questions,Ánda tô kasilyas?,Asa ang kasilyas?,kobeta?,Where is the comfort room?,,auto-split from slash values
+FALSE,P708,questions,Ándayé góddóan nu,Asa ka,Saan ka,Where are you going?,,singular
+FALSE,P709,questions,yu?,Asa mo nagpuyo?,Saan kayo nakatira?,Where do you live?,,need to double check
+FALSE,P710,questions,Mémuwù litratuwan kus kuna?,Mahimo bang retratohan ta ka?,Maari ba kitang litratuhan?,May I take your picture?,,
+FALSE,P711,questions,Salamat,Salamat,Salamat po,Thank you,,
+FALSE,P712,,Tut iskwilaa,Sa eskwelahan,Sa paaralan,At school,,
+FALSE,P713,at_school,Kumanta kid katô Pambansang Awit,Mokanta na ta sa Pambansang Awit,Awitin na natin ang Pambansang Awit,We will now sing the National Anthem,,
+FALSE,P714,at_school,Paminág kó pa,Paminaw sa mo,Makinig muna kayo,Listen,,plural
+FALSE,P715,at_school,Piyà kó paminág,Paminaw mog maayo,Makinig kayong mabuti,Listen carefully,,plural
+FALSE,P716,at_school,Taba yu tô insà,Tubaga ninyo ang pangutana,Sagutin ninyo ang tanong,Answer the question,,plural
+FALSE,P717,at_school,Ággár yu basayi,Basaha'g kusog,Basahin ninyo ng malakas,Read aloud,,plural
+FALSE,P718,at_school,Lagénut yu dád kag basa kó,Hinaya lang ninyo'g basa,Basahin (ninyo) ng tahimik,Read silently,,plural
+FALSE,P719,at_school,Uman yu ni istudyuwi,Tun-i ninyo ni pag-usab,Pag-aralan ninyo itong muli,Study it again,,plural
+FALSE,P720,at_school,"Minsà a. Na, taba yu","Mangutana ko. Unya, tubaga ninyo","Magtatanong ako. Tapos, sagutin ninyo","I'll ask a question. Then, you answer",,plural
+FALSE,P721,at_school,Tindág ka,Magtindog ka,Tumayo ka,Stand up,,singular
+FALSE,P722,at_school,kó,mo,kayo,Stand up,,need to double check
+FALSE,P723,at_school,Unsad ka,Maglingkod ka,Maupo ka,Sit down,,singular
+FALSE,P724,at_school,kó,mo,kayo,Sit down,,need to double check
+FALSE,P725,at_school,"Atin ikatigan yu, palayat yu yan bállad yu","Kong kahibalo mo sa tubag, ipataas ang inyong kamot","Kung alam ninyo ang sagot, itaas ninyo ang inyong kamay","If you know the answer, raise your hands",,plural
+FALSE,P726,at_school,Ággár nu kag kagi ka. Dì ké pakadinág,Kusga pagsulti. Di mi kadungog,Lakasan mo. Hindi namin marinig,Speak louder. We cannot hear you,,excl
+FALSE,P727,at_school,Ándinné lumun ta simag?,Unsa ang atong buhaton ugma?,Anong gagawin natin bukas?,What will we do tomorrow?,,incl
+FALSE,P728,at_school,Madigár,Maayo,Magaling,Good,,manual check: slash values
+FALSE,P729,at_school,Madigár,Maayo,Mabuti,Well behaved,,
+FALSE,P730,at_school,Madigár,Maayo,Mahusay,Good,,
+FALSE,P731,at_school,Nángngà,Insakto,Tama,Right,,manual check: slash values
+FALSE,P732,at_school,Nángngà, Husto,Tama,Enough,,
+FALSE,P733,at_school,Ánnà nángngà,Sayop,Mali,Wrong,,manual check: slash values
+FALSE,P734,at_school,Ánnà nángngà,Dili insakto,Mali,Incorrect,,
+FALSE,P735,at_school,Ánnà nángngà,Dili insakto,Mali,Not enough,,
+FALSE,P736,,Uras,Oras,Pagsasabi ng oras,Time,,
+FALSE,P737,time,Ándin urasi tumigkané tô miting?,Unsang orasa mosugod ang miting?,Anong oras magsisimula ang pulong,What time does the meeting start?,,auto-split from slash values
+FALSE,P738,time,Ándin urasi tumigkané tô miting?,Unsang orasa mosugod ang miting?,miting?,What time does the meeting start?,,auto-split from slash values
+FALSE,P739,time,Alas nuwibi ka sállám,Alas nwebe sa buntag,Alas nuwebe ng umaga,Nine o'clock in the morning,,
+FALSE,P740,time,Ala una ka mapun,Ala una sa hapon,Ala una ng hapon,One o'clock in the afternoon,,
+FALSE,P741,time,Alas dus midya ka mapun,Alas dos medya sa hapon,Alas dos medya ng hapon,At 2:30 pm,,
+FALSE,P742,time,Alas kuwatru kuwarinta singku ka mapun,Alas kwatro kwarenta i singko sa hapon,Alas kuwatro kuwarenta'y singko ng hapon,At 4:45 pm,,
+FALSE,P743,time,Madugé pa?,Madugay pa ba?,Matatagalan pa ba?,Will it be a long time yet?,,
+FALSE,P744,time,Ándin dánné uras?,Unsa nay oras?,Anong oras na?,What time is it?,,
+FALSE,P745,time,Mikatapuri kad,Naulahi na ka,Huli ka na,You are late,,singular
+FALSE,P746,time,kód,mo,Huli na kayo,You are late,,need to double check
+FALSE,P747,,Álló asta dukilám,Adlaw ug gabii ,Araw at Gabi,Day and night ,,
+FALSE,P748,day_night,álló,adlaw,araw,day,,auto-split from slash values
+FALSE,P749,day_night,álló,adlaw,araw,daytime,,auto-split from slash values
+FALSE,P750,day_night,dukilám,gabii,gabi,night,,auto-split from slash values
+FALSE,P751,day_night,dukilám,gabii,gabi,nighttime,,auto-split from slash values
+FALSE,P752,day_night,nigó,karon,ngayon,today,,
+FALSE,P753,day_night,nigó dukilám,karong gabii,ngayong gabi,tonight,,
+FALSE,P754,day_night,bani,gahapon,kahapon,yesterday,,
+FALSE,P755,day_night,géna dukilám,kagabii,kagabi,last night,,auto-split from slash values
+FALSE,P756,day_night,bani dukilám,kagabii,kagabi,last night,,auto-split from slash values
+FALSE,P757,day_night,simag,ugma,bukas,tomorrow,,
+FALSE,P758,day_night,simag ka dukilám,ugma sa gabii,bukas ng gabi,tomorrow night,,
+FALSE,P759,day_night,tô iduwaan,niadtong usa ka adlaw,kamakalawa,day before yesterday,,
+FALSE,P760,day_night,tô sábbad dukilám,niadtong usa ka gabii,kamakalawa ng gabi,night before last,,
+FALSE,P761,day_night,bani mapun,gahapon sa hapon,kahapon ng hapon,yesterday afternoon,,
+FALSE,P762,day_night,murusmalló,kaadlawon,madaling-araw,before dawn,,
+FALSE,P763,day_night,ágkallówalló,kaadlawon,madaling-araw,early dawn,,auto-split from slash values
+FALSE,P764,day_night,ágkallówalló,kaadlawon,madaling-araw,daybreak,,auto-split from slash values
+FALSE,P765,day_night,ágbáttu tô álló,pagsubang sa adlaw,pagsikat ng araw,sunrise,,auto-split from slash values
+FALSE,P766,day_night,ágsilat tô álló,pagsubang sa adlaw,pagsikat ng araw,sunrise,,auto-split from slash values
+FALSE,P767,day_night,sállám,buntag,umaga,morning,,
+FALSE,P768,day_night,malássád álló,udto,tanghali,noon,,
+FALSE,P769,day_night,mapun,hapon,hapon,afternoon,,auto-split from slash values
+FALSE,P770,day_night,mapun dán,hapon,hapon,late afternoon,,auto-split from slash values
+FALSE,P771,day_night,ágkabariring dán é álló,mga ala una sa hapon,mga alauna ng hapon,early afternoon,,1:00 p.m.
+FALSE,P772,day_night,ágsalláp tô álló,pagsalup sa adlaw,paglubog ng araw,sunset,,
+FALSE,P773,day_night,mantu dukilám,bag-ong gabii,gabi,evening,,
+FALSE,P774,day_night,ágkasagkup,kilumkilum,takipsilim,twilight,,
+FALSE,P775,day_night,mangittáng,ngitngit,madilim,dark,,
+FALSE,P776,day_night,kangittángngan,kangitngit,kadiliman,darkness,,
+FALSE,P777,day_night,tángngà ka dukilám,tungang gabii,hating gabi,midnight,,
+FALSE,P778,day_night,ágsilat tô bulan,pagsubang sa bulan,pagsikat ng buwan,moonrise,,
+FALSE,P779,,Timpu,Panahon,Panahon,Time expressions,,
+FALSE,P780,time_expressions,géna,ganiha,kanina,a while ago,,
+FALSE,P781,time_expressions,nigó sállám,karong buntag,ngayong umaga,this morning,,
+FALSE,P782,time_expressions,nigó mapun,karong hapon,kaninang hapon,this afternoon,,
+FALSE,P783,time_expressions,nigó,karon,ngayon,now,,
+FALSE,P784,time_expressions,kani dán,unya na,mamaya na,later on,,
+FALSE,P785,time_expressions,kani pa,unya pa,mamaya pa,later,,indefinite time
+FALSE,P786,time_expressions,sábbad álló asta sábbad dukilám,usa ka adlaw ug usa ka gabii,isang araw at isang gabi,one day,,24-hour period
+FALSE,P787,time_expressions,sábbad linggu,usa ka semana,isang linggo,one week,,
+FALSE,P788,time_expressions,sábbad bulan,usa ka bulan,isang buwan,one month,,
+FALSE,P789,time_expressions,sábbad ámmé,usa ka tuig,isang taon,one year,,
+FALSE,P790,time_expressions,saru simagé,ugma damlag,balang-araw,someday,,
+FALSE,P791,time_expressions,állówálló,adlaw-adlaw,araw-araw,every day,,auto-split from slash values
+FALSE,P792,time_expressions,tukid kalló,kada adlaw,araw-araw,every day,,auto-split from slash values
+FALSE,P793,time_expressions,linggulinggu,kada semana,linggo-linggo,every week,,weekly; auto-split from slash values
+FALSE,P794,time_expressions,tukid ka linggu,kada semana,linggo-linggo,every week,,weekly; auto-split from slash values
+FALSE,P795,time_expressions,mantu pa,karon lang,kailan lang,recently,,auto-split from slash values
+FALSE,P796,time_expressions,ni pa gó,bag-o pa,ngayon lang,recently,,auto-split from slash values
+FALSE,P797,time_expressions,nit dumunggù linggu,sunod semana,sa susunod na linggo,next week,,
+FALSE,P798,time_expressions,nigó linggu ni,karong semanaha,ngayong linggo,this week,,
+FALSE,P799,time_expressions,iglabé linggu,miaging semana,nakaraang linggo,last week,,
+FALSE,P800,time_expressions,iglabé ámmé,miaging tuig,nakaraang taon,last year,,
+FALSE,P801,time_expressions,nigó ámmé ni,karong tuiga,ngayong taon,this year,,
+FALSE,P802,time_expressions,nit dumunggù ámmé,sa sunod tuig,sa susunod na taon,next year,,
+FALSE,P803,time_expressions,dángngan,kaniadto,nakaraan,before,,auto-split from slash values
+FALSE,P804,time_expressions,sayyan,kaniadto,nakaraan,long ago,,auto-split from slash values
+FALSE,P805,,Salapì,Kwarta,Pera,Money,,
+FALSE,P806,money,dyis sintabus,dyes sintabos,diyes,ten centavos,,auto-split from slash values
+FALSE,P807,money,dyis sintabus,dyes sintabos,diyes sentimos,ten centavos,,auto-split from slash values
+FALSE,P808,money,bayinti sintabus,baynte sintabos,bente sentimos,twenty centavos,,auto-split from slash values
+FALSE,P809,money,bayinti sintabus,baynte sintabos,bente sentimos,twenty centavos,,auto-split from slash values
+FALSE,P810,money,singkuwinta sintabus,singkwenta sintabos,singkwenta sentimos,fifty centavos,,auto-split from slash values
+FALSE,P811,money,singkuwinta sintabus,singkwenta sintabos,singkwenta sentimos,fifty centavos,,auto-split from slash values
+FALSE,P812,money,pisus,pisos,piso,one peso,,auto-split from slash values
+FALSE,P813,money,pisus,pisos,piso,one peso,,auto-split from slash values
+FALSE,P814,money,"sábbad pisus, bayinti sintabus",uno baynte,uno beinte,one twenty,,auto-split from slash values
+FALSE,P815,money,"sábbad pisus, bayinti sintabus",uno baynte,uno beinte,one twenty,,auto-split from slash values
+FALSE,P816,money,"sábbad pisus, singkuwinta sintabus",uno singkwenta,uno singkwenta,one fifty,,auto-split from slash values
+FALSE,P817,money,"sábbad pisus, singkuwinta sintabus",uno singkwenta,uno singkwenta,one fifty,,auto-split from slash values
+FALSE,P818,money,lima pisus,singko pisos,limang piso,five pesos,,auto-split from slash values
+FALSE,P819,money,lima pisus,singko pisos,limang piso,five pesos,,auto-split from slash values
+FALSE,P820,,Giyap,Pag-ihap,Pagbilang,Counting,,
+FALSE,P821,counting,ássà,usa,isa,one,,auto-split from slash values
+FALSE,P822,counting,unu,uno,uno,one,,auto-split from slash values
+FALSE,P823,counting,duwa,duha,dalawa,two,,auto-split from slash values
+FALSE,P824,counting,dus,dos,dos,two,,auto-split from slash values
+FALSE,P825,counting,tállu,tulo,tatlo,three,,auto-split from slash values
+FALSE,P826,counting,trés,tres,tres,three,,auto-split from slash values
+FALSE,P827,counting,áppat,upat,apat,four,,auto-split from slash values
+FALSE,P828,counting,kuwatru,kwatro,kuwatro,four,,auto-split from slash values
+FALSE,P829,counting,lima,lima,lima,five,,auto-split from slash values
+FALSE,P830,counting,singku,singko,singko,five,,auto-split from slash values
+FALSE,P831,counting,ánnám,unum,anim,six,,auto-split from slash values
+FALSE,P832,counting,sayis,seis,seis,six,,auto-split from slash values
+FALSE,P833,counting,pittu,pito,pito,seve,,auto-split from slash values
+FALSE,P834,counting,siti,syete,siyete,seven,,auto-split from slash values
+FALSE,P835,counting,walu,walo,walo,eight ,,auto-split from slash values
+FALSE,P836,counting,utsu,otso,otso,eight,,auto-split from slash values
+FALSE,P837,counting,siyó,siyam,siyam,ninety,,auto-split from slash values
+FALSE,P838,counting,nuwibi,nwebe,nuwebe,nine,,auto-split from slash values
+FALSE,P839,counting,sapulù,napulo,sampu,ten,,auto-split from slash values
+FALSE,P840,counting,dyis,dyes,diyes,ten,,auto-split from slash values
+FALSE,P841,counting,duwa pulù,kaluhaan,dalawampu,twenty,,auto-split from slash values
+FALSE,P842,counting,bayinti,baynte,beinte,twenty,,auto-split from slash values
+FALSE,P843,counting,tállu pulù,katloan,tatlumpu,thirty,,auto-split from slash values
+FALSE,P844,counting,trayinta,treynta,treinta,thirty,,auto-split from slash values
+FALSE,P845,counting,kappatan,kap-atan,apatnapu,forty,,auto-split from slash values
+FALSE,P846,counting,kwarénta,kwarenta,kuwarenta,forty,,auto-split from slash values
+FALSE,P847,counting,kaliman,kalim-an,limampu,fifty,,auto-split from slash values
+FALSE,P848,counting,singkuwinta,singkwenta,singkwenta,fifty,,auto-split from slash values
+FALSE,P849,counting,kannámman,kan-uman,animnapu,sixty,,auto-split from slash values
+FALSE,P850,counting,saysinta,saysenta,sesenta,sixty,,auto-split from slash values
+FALSE,P851,counting,kapittuwan,kapitoan,pitumpu,seventy,,auto-split from slash values
+FALSE,P852,counting,sitinta,setenta,setenta,seventy,,auto-split from slash values
+FALSE,P853,counting,kawaluwan,kawaloan,walumpu,eighty,,auto-split from slash values
+FALSE,P854,counting,utsinta,otsenta,otsenta,eighty,,auto-split from slash values
+FALSE,P855,counting,kasiyawan,kasiyaman,siyamnapu,ninety,,auto-split from slash values
+FALSE,P856,counting,nubinta,nobenta,nobenta,ninety,,auto-split from slash values
+FALSE,P857,counting,sábbad gatus,usa ka gatus,isang daan,one hundred,,auto-split from slash values
+FALSE,P858,counting,siyintu,syento,siyento,one hundred,,auto-split from slash values
+FALSE,P859,counting,sábbad mararan,usa ka libo,isang libo,one thousand,,auto-split from slash values
+FALSE,P860,counting,mil,mil,mil,one thousand,,auto-split from slash values
+FALSE,P861,counting,una,una,una,first,,auto-split from slash values
+FALSE,P862,counting,tagnà,una,una,first,,auto-split from slash values
+FALSE,P863,counting,ikaduwa,ikaduha,ikalawa,second,,
+FALSE,P864,counting,ikatállu,ikatulo,ikatlo,third,,
+FALSE,P865,counting,ikappat,ikaupat,ikaapat,fourth,,
+FALSE,P866,counting,tagsábbaddé,kausa,minsan,once,,
+FALSE,P867,counting,tagsábbaddé,panagsa,bihira,"seldom, rarely, infrequently",,
+FALSE,P868,counting,tagsábbaddé dád,usahay lang,paminsan-minsan lang,once-in-awhile,,
+FALSE,P869,counting,tagsábbadsábbad,tagsa-tagsa,isa-isa,each one,,auto-split from slash values
+FALSE,P870,counting,tagsábbadsábbad,tagsa-tagsa,isa-isa,one by one,,auto-split from slash values
+FALSE,P871,counting,duwán dád timpu,usahay,pagkaminsan,sometimes,,auto-split from slash values
+FALSE,P872,counting,duwán dád timpu,usahay,kung-minsan,sometimes,,auto-split from slash values
+FALSE,P873,counting,ikaduwa dán,nakaduha na,dalawang beses,twice,,
+FALSE,P874,counting,ikatállu dán,nakatulo na,tatlong beses,three times,,
+FALSE,P875,counting,ikappat dán,nakaupat na,apat na beses,four times,,
+FALSE,P876,counting,ikalima dán,nakalima na,limang beses,five times,,
+FALSE,P877,counting,marag,permi,palagi,always,,manual check: slash values
+FALSE,P878,,marag,kanunay,palagi, consistently,,
+FALSE,P879,counting,marikit,subsub,madalas,frequently,,auto-split from slash values
+FALSE,P880,counting,marikit,sagunsun,malimit,often,,auto-split from slash values
+FALSE,P881,counting,inalayun,pirmamente,lagi,always,,auto-split from slash values
+FALSE,P882,counting,inalayun,pirmamente,lagi,permanently,,auto-split from slash values
+FALSE,P883,,Mannanap,Mga hayop,Mga hayop,Animals,,
+FALSE,P884,animals,asu,iro,aso,dog,,
+FALSE,P885,animals,ámbó,ilaga,daga,mouse,,auto-split from slash values
+FALSE,P886,animals,ámbó,ilaga,daga,rat,,auto-split from slash values
+FALSE,P887,animals,áppuy,bitin,ahas,snake,,
+FALSE,P888,animals,babuy,baboy,baboy,pig,,
+FALSE,P889,animals,babuy ta mabánnás,baboy ihalas,baboy damo,wild pig,,
+FALSE,P890,animals,baka,baka,baka,cow,,
+FALSE,P891,animals,bakbak,baki,palaka,frog,,
+FALSE,P892,animals,buwaya,buaya,buwaya,crocodile,,
+FALSE,P893,animals,gansà,gansa,gansa,goose,,
+FALSE,P894,animals,guyà,nati,guya,calf,,manual check: slash values
+FALSE,P895,animals,guyà,nati,bisiro,calf,,
+FALSE,P896,animals,guyà,nati,bulo,calf,,
+FALSE,P897,animals,ibid,ibid,bayawak,iguana lizard,,
+FALSE,P898,animals,kabág,kabog,paniki,large bat,,
+FALSE,P899,animals,kambing,kanding,kambing,goat,,
+FALSE,P900,animals,karabó,karabaw,kalabaw,carabao,,
+FALSE,P901,animals,kósét,kulaknit,kabag,small bat,,auto-split from slash values
+FALSE,P902,animals,kósét,kuwaknit,kabag,small bat,,auto-split from slash values
+FALSE,P903,animals,kudà,kabayo,kabayo,horse,,
+FALSE,P904,animals,lumansad,sunoy,tandang,rooster,,
+FALSE,P905,animals,lutung,unggoy,"matsing, unggoy",monkey,,
+FALSE,P906,animals,manuk,manok,manok,chicken,,
+FALSE,P907,animals,marán,himungaan,inahing manok,hen,,
+FALSE,P908,animals,méngkô,iring,pusa,cat,,
+FALSE,P909,animals,nati,nati,bisiro,colt,,
+FALSE,P910,animals,palas,halo,bayawak,agamid lizard,,
+FALSE,P911,animals,patu,pato,pato,duck,,auto-split from slash values
+FALSE,P912,animals,bibi,pato,pato,duck,,auto-split from slash values
+FALSE,P913,animals,pawikan,pawikan,pawikan,large sea turtle,,
+FALSE,P914,animals,pánnu,bao,pagong,small turtle,,
+FALSE,P915,animals,pispis,kuting,kuting,kitten,,
+FALSE,P916,animals,piyak,piso,sisiw,chick,,
+FALSE,P917,animals,susù,suso,suso,river snail,,
+FALSE,P918,animals,takkê,takkê,tuko,gecko,,
+FALSE,P919,animals,tákták,tiki,butiki,house lizard,,
+FALSE,P920,animals,titù,itoy,tuta,puppy,,
+FALSE,P921,animals,usa,binaw,usa,deer,,auto-split from slash values
+FALSE,P922,animals,saladáng,usa,usa,deer,,auto-split from slash values
+FALSE,P923,,Manuk tut kayun ,Langgam,Ibon,Birds,,
+FALSE,P924,birds,bakaka,tikarol,kasaykasay,kingfisher,,auto-split from slash values
+FALSE,P925,birds,bakaka,tingkarol,kasaykasay,kingfisher,,auto-split from slash values
+FALSE,P926,birds,balansagan,balalatok,karpintero,crimson-backed woodpecker,,
+FALSE,P927,birds,banug,agila,agila,eagle,,
+FALSE,P928,birds,bigsil,bangkiyod,pipit,wagtail,,
+FALSE,P929,birds,kalibasbas,sayaw,layanglayang,swift,,
+FALSE,P930,birds,kalusisi,piriko,loro,parrot,,
+FALSE,P931,birds,kalyawa,kalaw,kalaw,hornbill,,
+FALSE,P932,birds,kapi,banog,lawin,chicken hawk,,
+FALSE,P933,birds,kulagu,ngiwngiw,kuwago,owl,,
+FALSE,P934,birds,limukán,alimukon,kulukulo,dove,,
+FALSE,P935,birds,maya,maya,maya,ricebird,,auto-split from slash values
+FALSE,P936,birds,maya,maya,maya,chestnut mannikin,,auto-split from slash values
+FALSE,P937,birds,pitó,pitao,pugong parang,quail,,
+FALSE,P938,birds,pitpit,tamsi,pipit-puso,sunbird,,
+FALSE,P939,birds,salapati,salapati,kalapati,pigeon,,auto-split from slash values
+FALSE,P940,birds,salapati,salampati,kalapati,pigeon,,auto-split from slash values
+FALSE,P941,birds,tugkálling,sal-ing,koleto,coleto,,auto-split from slash values
+FALSE,P942,birds,tugkálling,iling,koleto,starling,,auto-split from slash values
+FALSE,P943,birds,tularubung,talabong,tagak,snowy egret,,
+FALSE,P944,birds,tuliyó,antulihaw,kuliyawan,oriole,,auto-split from slash values
+FALSE,P945,birds,tuliyó,antulihaw,tulihao,oriole,,auto-split from slash values
+FALSE,P946,birds,uwak,uwak,uwak,raven,,
+FALSE,P947,,Mga ulád,Mananap,Mga insekto,Insects,,
+FALSE,P948,,Mga ulád,Mananap,kulisap,Insects,,
+FALSE,P949,insects,ané,anay,anay,termite,,
+FALSE,P950,insects,apang,alisiwsiw,tipaklong,grasshopper,,
+FALSE,P951,insects,apang,dulon,balang,locust,,
+FALSE,P952,insects,apó,bunhok,hanip,chicken lice,,
+FALSE,P953,insects,asu ka kilat,bayingbaying,sambasamba,praying mantis,,
+FALSE,P954,insects,balawà,lawa,gagamba,spider,,
+FALSE,P955,insects,igas,aninipot,alitaptap,firefly,,
+FALSE,P956,insects,ipás,uk-uk,ipis,cockroach,,auto-split from slash values
+FALSE,P957,insects,tanga,uk-uk,ipis,cockroach,,auto-split from slash values
+FALSE,P958,insects,kalibangbang,alibangbang,paruparo,butterfly,,
+FALSE,P959,insects,kalibangbang,anunugba,gamugamo,moth,,
+FALSE,P960,insects,kataru,dakong ulod,higad,caterpillar,,
+FALSE,P961,insects,kulungkulung,kuliklik,kirwe,cricket,,auto-split from slash values
+FALSE,P962,insects,kulungkulung,kuliklik,kuliglig,cricket,,auto-split from slash values
+FALSE,P963,insects,kutu,kuto,kuto,louse,,auto-split from slash values
+FALSE,P964,insects,kutu,kuto,kuto,lice,,auto-split from slash values
+FALSE,P965,insects,langó,langaw,langaw,fly,,
+FALSE,P966,insects,lapinig,lampinig,putakti,small wasp,,
+FALSE,P967,insects,liwati,wati,bulating-lupa,earthworm,,
+FALSE,P968,insects,liyabád,labod,singsingsingsingan,millipede,,
+FALSE,P969,insects,pakyukan,putyukan,pukyutan,honey bee,,
+FALSE,P970,insects,palagawét lapinig,lampinig,putakti,hornet,,manual check: slash values
+FALSE,P971,insects,palagawét lapinig,lampinig,putakti,wasp ,,
+FALSE,P972,insects,palagawét lapinig,lampinig,putakti,yellowjacket,,
+FALSE,P973,insects,tabagang,bolod,salagubang,beetle,,auto-split from slash values
+FALSE,P974,insects,tabagang,bolod,uwang,beetle,,auto-split from slash values
+FALSE,P975,insects,tabulág,buyog,bubuyog,bumblebee,,auto-split from slash values
+FALSE,P976,insects,tababulág,buyog,bubuyog,bumblebee,,auto-split from slash values
+FALSE,P977,insects,tabuuwan,tambubuan,putakti,large black wasp,,
+FALSE,P978,insects,tagánnák,lamok,lamok,mosquito,,
+FALSE,P979,insects,takóréng,gangis,kuliglig,cicada,,
+FALSE,P980,insects,tamaing,ligwan,putakti,small wild honeybee,,auto-split from slash values
+FALSE,P981,insects,tamaing,tamaing,putakti,small wild honeybee,,auto-split from slash values
+FALSE,P982,insects,tapilak,uhipan,alupihan,centipede,,
+FALSE,P983,insects,tarangas,alindanaw,tutubi,dragonfly,,
+FALSE,P984,insects,tilla,pulgas,pulgas,flea,,
+FALSE,P985,insects,tugsip,kuting,surot,bedbug,,
+FALSE,P986,insects,ulád,hulmigas,langgam,ant,,
+FALSE,P987,,Sáddà,Isda,Isda,Fish,,
+FALSE,P988,fish,bais,kasili,igat,eel,,auto-split from slash values
+FALSE,P989,fish,kasili,kasili,palos,eel,,auto-split from slash values
+FALSE,P990,fish,bangus,bangus,bangus,milkfish,,
+FALSE,P991,fish,barilis,barilis,tambakol,yellowfin tuna,,
+FALSE,P992,fish,bulinaw,bulinaw,dilis,anchovy,,
+FALSE,P993,fish,butitì,bitabita,ulu-ulo,tadpole,,auto-split from slash values
+FALSE,P994,fish,butitì,botiti,ulu-ulo,tadpole,,auto-split from slash values
+FALSE,P995,fish,dadang,pasayan,hipon,small shrimp,,auto-split from slash values
+FALSE,P996,fish,dadang,pasayan,alamang,small shrimp,,auto-split from slash values
+FALSE,P997,fish,daing,bulad,daing,dried fish,,auto-split from slash values
+FALSE,P998,fish,daing,bulad,tuyo,dried fish,,auto-split from slash values
+FALSE,P999,fish,ihu,ihu,pating,shark,,
+FALSE,P1000,fish,karpa,karpa,karpa,carp,,
+FALSE,P1001,fish,katipà,pantat,hito,freshwater catfish,,auto-split from slash values
+FALSE,P1002,fish,katitu,pantat,hito,freshwater catfish,,auto-split from slash values
+FALSE,P1003,fish,kayumang,piyo,alimasag,small freshwater crab,,
+FALSE,P1004,fish,kayumang ka dagat,alimango,alimango,large marsh crab,,
+FALSE,P1005,fish,kugita,kugita,pugita,octopus,,
+FALSE,P1006,fish,lapulapu,lapulapu,lapulapu,grouper,,
+FALSE,P1007,fish,lukus,nukos,pusit,squid,,
+FALSE,P1008,fish,luan,haloan,dalag,mudfish,,auto-split from slash values
+FALSE,P1009,fish,luan,haloan,dalag,murrel,,auto-split from slash values
+FALSE,P1010,fish,mayamaya,mayamaya,mayamaya,snapper,,
+FALSE,P1011,fish,sapsap,sapsap,sapsap,slipmouth,,
+FALSE,P1012,fish,tamban,tamban,tamban,Indian sardine,,
+FALSE,P1013,fish,tangigi,tangigi,tanigi,Spanish mackerel,,
+FALSE,P1014,fish,tilapya,tilapya,tilapya,tilapia,,
+FALSE,P1015,fish,tulingan,tulingan,tulingan,bonito,,auto-split from slash values
+FALSE,P1016,fish,tulingan,tulingan,tulingan,tuna,,auto-split from slash values
