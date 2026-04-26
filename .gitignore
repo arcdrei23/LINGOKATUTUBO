@@ -20,3 +20,10 @@ lingokatutubo/backend/outputs/
 # Logs
 *.log
 npm-debug.log*
+
+venv/
+__pycache__/
+*.pyc
+.env
+.paddlex/
+uploads/
