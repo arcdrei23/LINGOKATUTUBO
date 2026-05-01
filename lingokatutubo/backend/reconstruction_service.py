@@ -15,7 +15,7 @@ class ReconstructionService:
     def reconstruct_pdf(
         input_pdf_path: str,
         layout_data: List[Dict[str, Any]],
-        translations: Dict[str, str],
+        translations: Dict[str, Dict[str, str]],
         output_path: str
     ) -> bool:
         """
@@ -24,7 +24,7 @@ class ReconstructionService:
         Args:
             input_pdf_path: Path to original PDF
             layout_data: Layout information from extraction
-            translations: Dict mapping original text -> translated text
+            translations: Dict mapping block_id -> {"original", "translated"}
             output_path: Path to save new PDF
         
         Returns:
@@ -44,7 +44,7 @@ class ReconstructionService:
                 # Remove old text blocks and replace with translated ones
                 # This is a simplified approach - removes all text and re-adds translated
                 
-                for block in blocks:
+                for block_index, block in enumerate(blocks):
                     if block.get("type") != "text":
                         continue
 
@@ -66,12 +66,8 @@ class ReconstructionService:
                     
                     for line in lines:
                         original_text = line.get("text", "")
-                        lookup_key = original_text.strip()
-                        translated_text = (
-                            translations.get(lookup_key)
-                            or translations.get(lookup_key.lower())
-                            or original_text
-                        )
+                        lookup_key = f"{page_num}_{block_index}"
+                        translated_text = translations.get(lookup_key, {}).get("translated", original_text)
                         line_bbox = line.get("bbox")
                         
                         if line_bbox and translated_text:

@@ -1,11 +1,12 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Navigation } from '@/components/navigation';
 import { Upload, FileText, Check, AlertCircle, Download, Globe, ArrowUpDown } from 'lucide-react';
 import { useUpload } from '@/hooks/use-upload';
+import { getApiBaseUrl } from '@/lib/api-base';
 
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:8000';
+const API_BASE = getApiBaseUrl();
 
 const SOURCE_LANGUAGES = [
   { value: 'auto',     label: '🔍 Auto-Detect' },
@@ -23,6 +24,7 @@ const TARGET_LANGUAGES = [
 ];
 
 export default function TranslatePage() {
+  const [previewData, setPreviewData] = useState<any>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [sourceLanguage, setSourceLanguage] = useState('auto');
@@ -36,8 +38,34 @@ export default function TranslatePage() {
   const [isJobComplete, setIsJobComplete] = useState(false);
   const detectStartRef = useRef<number>(0);
   const detectionShownRef = useRef<boolean>(false);
+  const pollTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const detectionTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const pollAbortRef = useRef<AbortController | null>(null);
+  const isMountedRef = useRef<boolean>(true);
 
   const { upload, isLoading: isUploading, error: uploadError } = useUpload();
+
+  const clearPolling = () => {
+    if (pollTimerRef.current) {
+      clearTimeout(pollTimerRef.current);
+      pollTimerRef.current = null;
+    }
+    if (detectionTimerRef.current) {
+      clearTimeout(detectionTimerRef.current);
+      detectionTimerRef.current = null;
+    }
+    if (pollAbortRef.current) {
+      pollAbortRef.current.abort();
+      pollAbortRef.current = null;
+    }
+  };
+
+  useEffect(() => {
+    return () => {
+      isMountedRef.current = false;
+      clearPolling();
+    };
+  }, []);
 
   const formatLanguageName = (lang: string): string => {
     const names: Record<string, string> = {
@@ -104,6 +132,8 @@ export default function TranslatePage() {
 
   const handleTranslate = async () => {
     if (!selectedFile) return;
+    clearPolling();
+    setPreviewData(null);
     setErrorMessage(null);
     setDetectedLanguage(null);
     setDetectionConfidence(null);
@@ -133,7 +163,13 @@ export default function TranslatePage() {
     const maxAttempts = 120; // ~3 minutes at 1.5s interval
 
     const poll = async () => {
+      if (!isMountedRef.current) {
+        clearPolling();
+        return;
+      }
+
       if (attempts >= maxAttempts) {
+        clearPolling();
         setIsDetectingLanguage(false);
         setErrorMessage('Translation is taking too long. Please try again.');
         return;
@@ -141,16 +177,21 @@ export default function TranslatePage() {
       attempts++;
 
       try {
-        const res = await fetch(`${API_BASE}/status/${jobId}`);
+        pollAbortRef.current?.abort();
+        const controller = new AbortController();
+        pollAbortRef.current = controller;
+        const res = await fetch(`${API_BASE}/status/${jobId}`, { signal: controller.signal });
+        pollAbortRef.current = null;
 
         if (!res.ok) {
           consecutiveNetworkErrors++;
           if (consecutiveNetworkErrors >= 5) {
+            clearPolling();
             setIsDetectingLanguage(false);
             setErrorMessage(`Status check failed (HTTP ${res.status}).`);
             return;
           }
-          setTimeout(poll, 1500);
+          pollTimerRef.current = setTimeout(poll, 1500);
           return;
         }
 
@@ -161,7 +202,8 @@ export default function TranslatePage() {
           detectionShownRef.current = true;
           const elapsed = Date.now() - detectStartRef.current;
           const delay = Math.max(0, 1500 - elapsed);
-          setTimeout(() => {
+          detectionTimerRef.current = setTimeout(() => {
+            if (!isMountedRef.current) return;
             setDetectedLanguage(formatLanguageName(data.detected_language));
             setDetectionConfidence(data.detection_confidence ?? null);
             setIsDetectingLanguage(false);
@@ -169,34 +211,50 @@ export default function TranslatePage() {
         }
 
         if (data.status === 'completed') {
+          clearPolling();
           setIsDetectingLanguage(false);
           setIsJobComplete(true);
+          try {
+            const previewResponse = await fetch(`${API_BASE}/preview/${jobId}`);
+            if (previewResponse.ok) {
+              const preview = await previewResponse.json();
+              setPreviewData(preview);
+            }
+          } catch {
+            // Keep completion flow intact even if preview is unavailable.
+          }
           return;
         }
 
         if (data.status === 'failed') {
+          clearPolling();
           setIsDetectingLanguage(false);
           setErrorMessage(data.error || data.message || 'Translation failed. Please try again.');
           return;
         }
 
         if (data.status === 'not_found') {
+          clearPolling();
           setIsDetectingLanguage(false);
           setErrorMessage('Job not found on the backend. Please upload again.');
           return;
         }
 
         if (data.status === 'processing' || data.status === 'queued') {
-          setTimeout(poll, 1500);
+          pollTimerRef.current = setTimeout(poll, 1500);
         }
-      } catch {
+      } catch (error) {
+        if (error instanceof DOMException && error.name === 'AbortError') {
+          return;
+        }
         consecutiveNetworkErrors++;
         if (consecutiveNetworkErrors >= 5) {
+          clearPolling();
           setIsDetectingLanguage(false);
           setErrorMessage('Lost connection to backend server. Please check that it is running.');
           return;
         }
-        setTimeout(poll, 1500);
+        pollTimerRef.current = setTimeout(poll, 1500);
       }
     };
 
@@ -241,6 +299,8 @@ export default function TranslatePage() {
   };
 
   const resetTranslation = () => {
+    clearPolling();
+    setPreviewData(null);
     setSelectedFile(null);
     setUploadId(null);
     setUploadStatus('idle');
@@ -254,6 +314,21 @@ export default function TranslatePage() {
 
   const langLabel = (val: string) =>
     TARGET_LANGUAGES.find((l) => l.value === val)?.label ?? val;
+
+  const getPreviewImageUrl = (jobId: string, imageValue?: string): string | null => {
+    if (!jobId || !imageValue) return null;
+    if (imageValue.startsWith('http://') || imageValue.startsWith('https://')) return imageValue;
+    const normalized = imageValue.replace(/\\/g, '/');
+    const fileName = normalized.split('/').pop();
+    if (!fileName) return null;
+    return `${API_BASE}/preview-image/${jobId}/${fileName}`;
+  };
+
+  const firstOriginalPreview =
+    previewData?.left_page_preview ??
+    getPreviewImageUrl(previewData?.job_id, previewData?.original_pages?.[0]);
+
+  const previewBlocks = previewData?.bilingual_first_page?.blocks ?? [];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background via-white to-background">
@@ -516,6 +591,37 @@ export default function TranslatePage() {
             </div>
           </div>
         </div>
+
+        {previewData && (
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            <div className="rounded-xl border border-primary/20 bg-white p-4">
+              <h3 className="mb-3 text-lg font-bold text-primary">Original Page</h3>
+              {firstOriginalPreview ? (
+                <img src={firstOriginalPreview} alt="Original page preview" className="w-full rounded-lg border" />
+              ) : (
+                <p className="text-sm text-foreground/70">No original preview available.</p>
+              )}
+            </div>
+
+            <div className="rounded-xl border border-secondary/20 bg-white p-4">
+              <h3 className="mb-3 text-lg font-bold text-secondary">Translated Blocks</h3>
+              {previewBlocks.length > 0 ? (
+                <div className="space-y-3">
+                  {previewBlocks.map((block: any, index: number) => (
+                    <div key={index} className="rounded-lg border border-foreground/10 p-3">
+                      <p className="text-sm"><strong>Original:</strong> {block.original_text ?? '-'}</p>
+                      <p className="mt-1 text-sm"><strong>Translation:</strong> {block.translated_text ?? '-'}</p>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <p className="text-sm text-foreground/70">
+                  No bilingual text blocks available for this job yet.
+                </p>
+              )}
+            </div>
+          </div>
+        )}
 
         {/* Feature cards */}
         <div className="mt-20 grid md:grid-cols-4 gap-6">

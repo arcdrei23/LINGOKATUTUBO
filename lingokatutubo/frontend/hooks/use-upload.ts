@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import { getApiBaseUrl } from '@/lib/api-base';
 
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:8000';
+const API_BASE = getApiBaseUrl();
 
 export interface UploadResponse {
   job_id: string;

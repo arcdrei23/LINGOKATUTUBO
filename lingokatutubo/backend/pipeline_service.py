@@ -8,6 +8,8 @@ import os
 from typing import Optional, Dict, Any
 from datetime import datetime
 import json
+import sys
+from pathlib import Path
 
 from models import FileType, DetectionType
 from file_service import get_file_service
@@ -45,6 +47,19 @@ class PipelineService:
         self.language_service = get_language_detection_service(self.translation_dataset)
 
         self.jobs = {}  # job_id -> JobStatus
+
+    @staticmethod
+    def _run_ocr_for_scanned(input_file_path: str) -> dict:
+        """
+        Run OCR from the OCR stage module for scanned/image input.
+        """
+        project_root = Path(__file__).resolve().parents[1]
+        if str(project_root) not in sys.path:
+            sys.path.append(str(project_root))
+
+        from ocr_stage.services.ocr_service import run_ocr
+
+        return run_ocr(input_file_path)
     
     async def process_translation(
         self,
@@ -101,10 +116,30 @@ class PipelineService:
                 elif file_type == FileType.DOCX:
                     layout_data = self.extraction_service.extract_docx_text_and_layout(input_file_path)
             else:
-                # For scanned documents, OCR would be called here
-                # Placeholder: create mock layout data
-                print(f"[Pipeline] SCANNED document - OCR placeholder")
-                layout_data = self._create_mock_layout_for_scanned(input_file_path)
+                print(f"[Pipeline] SCANNED document - running OCR")
+                ocr_result = self._run_ocr_for_scanned(input_file_path)
+                blocks = []
+                for block in ocr_result.get("results", []):
+                    blocks.append(
+                        {
+                            "type": "text",
+                            "bbox": block.get("bbox"),
+                            "lines": [
+                                {
+                                    "text": block.get("text", ""),
+                                    "bbox": block.get("bbox"),
+                                }
+                            ],
+                        }
+                    )
+                layout_data = [
+                    {
+                        "page": 0,
+                        "width": 612,
+                        "height": 792,
+                        "blocks": blocks,
+                    }
+                ]
             
             if not layout_data:
                 raise Exception("Failed to extract layout")
@@ -225,19 +260,19 @@ class PipelineService:
         layout_data: list,
         source_lang: str,
         target_lang: str
-    ) -> Dict[str, str]:
+    ) -> Dict[str, Dict[str, str]]:
         """
         Translate all text in layout data
         
         Returns:
-            Dict mapping original text -> translated text
+            Dict mapping block_id -> {"original", "translated"}
         """
         translations = {}
         
-        for page_data in layout_data:
+        for page_index, page_data in enumerate(layout_data):
             blocks = page_data.get("blocks", [])
             
-            for block in blocks:
+            for block_index, block in enumerate(blocks):
                 if block.get("type") != "text":
                     continue
                 
@@ -254,34 +289,19 @@ class PipelineService:
                         source_lang=source_lang,
                         target_lang=target_lang
                     )
-                    
-                    translations[original] = translated
+
+                    block_id = f"{page_index}_{block_index}"
+                    translations[block_id] = {
+                        "original": original,
+                        "translated": translated,
+                    }
         
         return translations
-    
-    def _create_mock_layout_for_scanned(self, file_path: str) -> list:
-        """
-        Create mock layout for scanned documents
-        Placeholder until OCR is implemented
-        """
-        return [{
-            "page": 0,
-            "width": 612,
-            "height": 792,
-            "blocks": [{
-                "type": "text",
-                "bbox": [50, 50, 562, 742],
-                "lines": [{
-                    "text": "[Scanned document - OCR not yet implemented]",
-                    "bbox": [50, 50, 562, 100]
-                }]
-            }]
-        }]
     
     def _create_output_pdf(
         self,
         layout_data: list,
-        translations: Dict[str, str],
+        translations: Dict[str, Dict[str, str]],
         output_path: str
     ) -> bool:
         """
@@ -293,10 +313,10 @@ class PipelineService:
             page = doc.new_page()
             
             y_pos = 50
-            for page_data in layout_data:
+            for page_index, page_data in enumerate(layout_data):
                 blocks = page_data.get("blocks", [])
                 
-                for block in blocks:
+                for block_index, block in enumerate(blocks):
                     if block.get("type") != "text":
                         continue
                     
@@ -304,7 +324,8 @@ class PipelineService:
                     
                     for line in lines:
                         original = line.get("text", "")
-                        translated = translations.get(original, original)
+                        block_id = f"{page_index}_{block_index}"
+                        translated = translations.get(block_id, {}).get("translated", original)
                         
                         if translated:
                             page.insert_text((50, y_pos), translated, fontsize=11)
