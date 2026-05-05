@@ -127,6 +127,7 @@ class PipelineService:
                             "lines": [
                                 {
                                     "text": block.get("text", ""),
+                                    "translation": block.get("translation"),
                                     "bbox": block.get("bbox"),
                                 }
                             ],
@@ -184,6 +185,10 @@ class PipelineService:
                 print(f'[Pipeline] Translated: "{_orig}" -> "{_xlat}"')
 
             job.metadata["translated_blocks"] = len(translations)
+            job.metadata["bilingual_first_page"] = self._build_bilingual_first_page(
+                layout_data,
+                translations,
+            )
             
             # Phase 4: Reconstruct document
             print(f"[Pipeline] Phase 4: Reconstructing document")
@@ -339,6 +344,42 @@ class PipelineService:
         except Exception as e:
             print(f"[Pipeline] Error creating output PDF: {e}")
             return False
+
+    def _build_bilingual_first_page(
+        self,
+        layout_data: list,
+        translations: Dict[str, Dict[str, str]],
+    ) -> Dict[str, Any]:
+        blocks_output = []
+        if not layout_data:
+            return {"blocks": blocks_output}
+
+        first_page_blocks = layout_data[0].get("blocks", [])
+        for block_index, block in enumerate(first_page_blocks):
+            if block.get("type") != "text":
+                continue
+
+            block_bbox = block.get("bbox")
+            for line in block.get("lines", []):
+                original_text = line.get("text", "").strip()
+                if not original_text:
+                    continue
+
+                block_id = f"0_{block_index}"
+                translated_text = (
+                    line.get("translation")
+                    or translations.get(block_id, {}).get("translated")
+                    or "UNKNOWN_FOR_REVIEW"
+                )
+                blocks_output.append(
+                    {
+                        "original_text": original_text,
+                        "translated_text": translated_text,
+                        "bbox": line.get("bbox") or block_bbox,
+                    }
+                )
+
+        return {"blocks": blocks_output}
     
     def get_job_status(self, job_id: str) -> Optional[JobStatus]:
         """Get status of a job"""

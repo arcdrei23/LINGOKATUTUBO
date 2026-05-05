@@ -231,10 +231,20 @@ async def get_preview(job_id: str):
     
     preview_original = job_status.metadata.get("preview_original", [])
     preview_translated = job_status.metadata.get("preview_translated", [])
+    bilingual_first_page = job_status.metadata.get("bilingual_first_page", {"blocks": []})
+
+    left_page_preview = None
+    if preview_original:
+        first_image_path = str(preview_original[0]).replace("\\", "/")
+        first_image_name = first_image_path.split("/")[-1]
+        if first_image_name:
+            left_page_preview = f"/preview-image/{job_id}/{first_image_name}"
     
     # Convert file paths to URLs (in production, serve from object storage)
     return {
         "job_id": job_id,
+        "left_page_preview": left_page_preview,
+        "bilingual_first_page": bilingual_first_page,
         "original_pages": preview_original,
         "translated_pages": preview_translated,
         "page_count": max(len(preview_original), len(preview_translated))

@@ -324,8 +324,14 @@ export default function TranslatePage() {
     return `${API_BASE}/preview-image/${jobId}/${fileName}`;
   };
 
+  const resolvePreviewUrl = (urlValue?: string): string | null => {
+    if (!urlValue) return null;
+    if (urlValue.startsWith('http://') || urlValue.startsWith('https://')) return urlValue;
+    return `${API_BASE}${urlValue.startsWith('/') ? '' : '/'}${urlValue}`;
+  };
+
   const firstOriginalPreview =
-    previewData?.left_page_preview ??
+    resolvePreviewUrl(previewData?.left_page_preview) ??
     getPreviewImageUrl(previewData?.job_id, previewData?.original_pages?.[0]);
 
   const previewBlocks = previewData?.bilingual_first_page?.blocks ?? [];
@@ -610,7 +616,12 @@ export default function TranslatePage() {
                   {previewBlocks.map((block: any, index: number) => (
                     <div key={index} className="rounded-lg border border-foreground/10 p-3">
                       <p className="text-sm"><strong>Original:</strong> {block.original_text ?? '-'}</p>
-                      <p className="mt-1 text-sm"><strong>Translation:</strong> {block.translated_text ?? '-'}</p>
+                      <p className="mt-1 text-sm">
+                        <strong>Translation:</strong>{' '}
+                        <span className={block.translated_text === 'UNKNOWN_FOR_REVIEW' ? 'text-red-600 font-semibold' : ''}>
+                          {block.translated_text ?? 'UNKNOWN_FOR_REVIEW'}
+                        </span>
+                      </p>
                     </div>
                   ))}
                 </div>

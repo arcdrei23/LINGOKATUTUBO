@@ -1,13 +1,14 @@
 import uuid
 
 from paddleocr import PaddleOCR
+from services.translator_service import get_translator_service
 
 ocr = PaddleOCR(use_angle_cls=True, lang="en")
+translator_service = get_translator_service()
 
 
 def translate_text(text: str) -> str:
-    # Placeholder translator for bilingual output wiring.
-    return text
+    return translator_service.translate_text(text)
 
 
 def normalize_bbox(bbox) -> list[float]:
@@ -16,7 +17,7 @@ def normalize_bbox(bbox) -> list[float]:
     return [min(xs), min(ys), max(xs), max(ys)]
 
 
-def run_ocr(image_path: str) -> dict:
+def run_ocr(image_path: str, page_number: int = 1) -> dict:
     result = ocr.ocr(image_path, cls=True)
     if not result or not result[0]:
         return {
@@ -26,11 +27,12 @@ def run_ocr(image_path: str) -> dict:
         }
 
     blocks = []
-    for line in result[0]:
+    for index, line in enumerate(result[0], start=1):
         bbox, (text, confidence) = line
         normalized_bbox = normalize_bbox(bbox)
         blocks.append(
             {
+                "block_id": f"p{page_number}_b{index}",
                 "text": text,
                 "translation": translate_text(text),
                 "bbox": normalized_bbox,
